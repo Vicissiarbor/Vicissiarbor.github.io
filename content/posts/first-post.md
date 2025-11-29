@@ -38,10 +38,11 @@ func main() {
 
 func square(x int) int {
     return x * x
-}```
+}
+```
 
 ###Python代码
-```python
+```Python
 import numpy as np
 
 def matrix_operations():
