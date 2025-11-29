@@ -1,0 +1,28 @@
+baseURL = 'https://rang-jiao.github.io'  # 改成你的GitHub Pages地址
+languageCode = 'zh-cn'
+title = '交讓所生'                     # 博客标题
+theme = 'PaperMod'                         # 主题名称
+
+[params]
+  env = 'production'
+  description = '这是我的个人博客'         # 博客描述
+  author = '交讓'                      # 作者名
+  ShowReadingTime = true                   # 显示阅读时长
+  ShowShareButtons = true                  # 显示分享按钮
+  ShowBreadCrumbs = true                   # 显示面包屑导航
+
+[menu]
+  [[menu.main]]
+    identifier = 'posts'
+    name = '文章'
+    url = '/posts/'
+    weight = 10
+  [[menu.main]]
+    identifier = 'about'
+    name = '关于'
+    url = '/about/'
+    weight = 20
+
+[markup]
+  [markup.highlight]
+    style = 'github'                       # 代码高亮主题
