@@ -23,6 +23,6 @@ theme = 'PaperMod'
       linkify = true
 
   [markup.highlight]
-    style = 'github'  # 代码高亮主题
+    style = 'monokailight'  # 代码高亮主题
     lineNos = true    # 显示行号
     codeFences = true # 启用代码围栏
