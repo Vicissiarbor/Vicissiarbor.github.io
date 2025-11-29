@@ -1,6 +1,6 @@
 ---
-title: "功能综合测试：图片 + LaTeX + 代码"
-date: 2024-01-15
+title: "功能综合测试"
+date: 2025-11-25
 draft: false
 math: true  # 开启LaTeX支持
 ---
