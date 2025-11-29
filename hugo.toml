@@ -27,6 +27,3 @@ theme = 'PaperMod'
     style = 'monokailight'  # 代码高亮主题
     lineNos = true    # 显示行号
     codeFences = true # 启用代码围栏
-
-  [markup.goldmark.renderer]
-    unsafe = true
