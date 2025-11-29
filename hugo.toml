@@ -1,28 +1,28 @@
-baseURL = 'https://rang-jiao.github.io'  # 改成你的GitHub Pages地址
+baseURL = 'https://rang-jiao.github.io'
 languageCode = 'zh-cn'
-title = '交讓所生'                     # 博客标题
-theme = 'PaperMod'                         # 主题名称
+title = '交讓所生'
+theme = 'PaperMod'
 
 [params]
-  env = 'production'
-  description = '这是我的个人博客'         # 博客描述
-  author = '交讓'                      # 作者名
-  ShowReadingTime = true                   # 显示阅读时长
-  ShowShareButtons = true                  # 显示分享按钮
-  ShowBreadCrumbs = true                   # 显示面包屑导航
+  ShowReadingTime = true
+  ShowShareButtons = true
 
-[menu]
-  [[menu.main]]
-    identifier = 'posts'
-    name = '文章'
-    url = '/posts/'
-    weight = 10
-  [[menu.main]]
-    identifier = 'about'
-    name = '关于'
-    url = '/about/'
-    weight = 20
-
+# Markdown渲染配置（关键添加）
 [markup]
+  defaultMarkdownHandler = 'goldmark'
+  
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true  # 允许HTML渲染（如果需要在Markdown中插入HTML）
+    
+    [markup.goldmark.extensions]
+      typographer = true
+      table = true
+      taskList = true
+      strikethrough = true
+      linkify = true
+
   [markup.highlight]
-    style = 'github'                       # 代码高亮主题
+    style = 'github'  # 代码高亮主题
+    lineNos = true    # 显示行号
+    codeFences = true # 启用代码围栏
