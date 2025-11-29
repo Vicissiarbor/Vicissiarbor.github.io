@@ -38,9 +38,10 @@ func main() {
 
 func square(x int) int {
     return x * x
-}
+}```
 
 ###Python代码
+```python
 import numpy as np
 
 def matrix_operations():
@@ -53,8 +54,9 @@ def matrix_operations():
     return result
 
 print(matrix_operations())
-
+```
 ###JavaScript代码
+```javascript
 // 异步函数示例
 async function fetchData() {
     try {
@@ -65,6 +67,7 @@ async function fetchData() {
         console.error('Error:', error);
     }
 }
+```
 ##3.LaTeX数学公式测试
 ### 行内公式
 行内公式示例：$E = mc^2$，$\alpha = \beta + \gamma$，$\sum_{i=1}^{n} x_i = 1$
