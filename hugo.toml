@@ -11,17 +11,10 @@ theme = 'PaperMod'
   ShowShareButtons = true
   math = true
 
-  [params.homeInfoParams]
-    Title = "交讓所生"
-    Content = """
-    求其诚者，非归饷也不可
-    """
   [params.author]
     name = "交讓所生"
     image = "/images/avatar.jpg"
-  [
-params.homeInfoParams
-]
+  [params.homeInfoParams]
     Title = "交讓所生"
     Content = "求其诚者，非归饷也不可"
     # 新增：主页头像配置（与 static/images/avatar.jpg 对应）
@@ -71,3 +64,5 @@ params.homeInfoParams
     style = 'github'  # 代码高亮主题
     lineNos = true    # 显示行号
     codeFences = true # 启用代码围栏
+    lineNumbersInTable = false
+    tabWidth = 4
