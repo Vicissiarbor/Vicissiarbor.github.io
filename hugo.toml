@@ -11,12 +11,6 @@ theme = 'PaperMod'
   ShowShareButtons = true
   math = true
 
-  [params.profileMode]  # 必须缩进2个空格在[params]下
-    enabled = true
-    title = "交讓所生"
-    subtitle = "个人博客"
-    imageUrl = "/images/avatar.jpg"  #路径以/开头
-    imageTitle = "我的头像"
 
 [menu]
   [[menu.main]]
@@ -59,4 +53,4 @@ theme = 'PaperMod'
     [markup.highlight]
       style = 'catppuccin-latte'  # 代码高亮主题
       lineNos = true    # 显示行号
-      codeFences = false # 启用代码围栏
+      codeFences = ture # 启用代码围栏
