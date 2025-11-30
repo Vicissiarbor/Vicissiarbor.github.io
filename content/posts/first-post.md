@@ -1,3 +1,4 @@
+
 ---
 title: "功能综合测试"
 date: 2025-11-25
@@ -85,12 +86,13 @@ a & b & c \\
 d & e & f \\
 g & h & i
 \end{pmatrix}
+$$
+$$
 \begin{pmatrix}
 x \\
 y \\
 z
-\end{pmatrix}
-=
+\end{pmatrix}=
 \begin{pmatrix}
 ax + by + cz \\
 dx + ey + fz \\
@@ -119,7 +121,7 @@ $$
 | Go         | 后端开发 | `fmt.Println()`  |
 | Python     | 数据科学 | `import numpy`   |
 | JavaScript | 前端开发 | `async/await`    |
-| LaTeX      | 数学排版 | `$\sum_{i=1}^n$` |
+| LaTeX      | 数学排版 | $\sum_{i=1}^n$  |
 
 ## 5. 列表测试
 
@@ -148,4 +150,4 @@ $$
 > 引用可以嵌套其他Markdown语法：**粗体**、*斜体*、`代码`
 
 ## 8. 链接测试
-[我的博客](https://tree.xtkx.site)
+[我的博客](https://rang-jiao.github.io)
