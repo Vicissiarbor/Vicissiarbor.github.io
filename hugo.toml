@@ -11,6 +11,14 @@ theme = 'PaperMod'
   ShowShareButtons = true
   math = true
 
+  [params.homeInfoParams]
+    Title = "交讓所生"
+    Content = """
+    求其诚者，非归饷也不可
+    """
+  [params.author]
+    name = "交讓所生"
+    image = "/images/avatar.jpg"
 
 [menu]
   [[menu.main]]
@@ -50,7 +58,7 @@ theme = 'PaperMod'
       strikethrough = true
       linkify = true
 
-    [markup.highlight]
-      style = 'catppuccin-latte'  # 代码高亮主题
-      lineNos = true    # 显示行号
-      codeFences = ture # 启用代码围栏
+  [markup.highlight]
+    style = 'catppuccin-frappe'  # 代码高亮主题
+    lineNos = true    # 显示行号
+    codeFences = false # 启用代码围栏
