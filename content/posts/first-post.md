@@ -41,7 +41,7 @@ func square(x int) int {
 }
 ```
 
-###Python代码
+### Python代码
 ```Python
 import numpy as np
 
@@ -56,7 +56,7 @@ def matrix_operations():
 
 print(matrix_operations())
 ```
-###JavaScript代码
+### JavaScript代码
 ```javascript
 // 异步函数示例
 async function fetchData() {
@@ -69,7 +69,7 @@ async function fetchData() {
     }
 }
 ```
-##3.LaTeX数学公式测试
+## 3.LaTeX数学公式测试
 ### 行内公式
 行内公式示例：$E = mc^2$，$\alpha = \beta + \gamma$，$\sum_{i=1}^{n} x_i = 1$
 
@@ -112,7 +112,7 @@ $$
 \frac{\partial^2 u}{\partial t^2} = c^2 \nabla^2 u + f(x, t)
 $$
 
-##4. 表格测试
+## 4. 表格测试
 
 | 语言         | 用途   | 示例               |
 | ---------- | ---- | ---------------- |
