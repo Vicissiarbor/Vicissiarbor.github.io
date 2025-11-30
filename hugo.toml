@@ -13,20 +13,24 @@ theme = 'PaperMod'
     identifier = "about"
     name = "关于我"
     url = "/about/"
-    weight = 10  # 权重越小越靠左
+    weight = 40  # 权重越小越靠左
 
   [[menu.main]]
     identifier = "archives"
     name = "归档"
     url = "/archives/"
-    weight = 20
+    weight = 10
 
   [[menu.main]]
     identifier = "links"
     name = "友链"
     url = "/links/"
     weight = 30
-
+  [[menu.main]]
+    identifier = "categories"
+    name = "分类"
+    url = "/categories/"
+    weight = 20 
 # Markdown渲染配置（关键添加）
 [markup]
   defaultMarkdownHandler = 'goldmark'
@@ -43,6 +47,6 @@ theme = 'PaperMod'
       linkify = true
 
   [markup.highlight]
-    style = 'monokailight'  # 代码高亮主题
+    style = 'igor'  # 代码高亮主题
     lineNos = true    # 显示行号
     codeFences = true # 启用代码围栏
