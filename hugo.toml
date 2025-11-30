@@ -1,6 +1,9 @@
 baseURL = 'https://rang-jiao.github.io'
 languageCode = 'zh-cn'
 title = '交讓所生'
+subtitle = "求其诚者，非归饷也不可"  # 副标题
+imageUrl = "/images/avatar.png"  # 头像路径
+imageTitle = "我的头像"
 theme = 'PaperMod'
 
 [params]

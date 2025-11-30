@@ -1,14 +1,23 @@
 {{- if or .Params.math site.Params.math }}
   {{- partial "math.html" . }}
 {{- end }}
+
 <style>
-/* 代码块背景调亮 */
-code, pre {
-  background-color: #f6f8fa !important;
+/* 强制代码块白色背景 */
+.highlight, pre, code {
+  background-color: #ffffff !important;
   color: #24292e !important;
 }
-/* 行号颜色 */
+
+/* 行号背景 */
 .ln {
+  background-color: #f6f8fa !important;
   color: #6a737d !important;
+}
+
+/* 代码块边框 */
+pre {
+  border: 1px solid #d0d7de !important;
+  border-radius: 6px;
 }
 </style>
