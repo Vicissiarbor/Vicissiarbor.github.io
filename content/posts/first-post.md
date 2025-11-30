@@ -2,8 +2,8 @@
 ---
 title: "功能综合测试"
 date: 2025-11-30
-categories: ["技术", "Hugo"]
-tags: ["其他"]
+categories: ["其他"]
+tags: ["技术", "Hugo"]
 draft: false
 math: true  # 开启LaTeX支持
 ---
