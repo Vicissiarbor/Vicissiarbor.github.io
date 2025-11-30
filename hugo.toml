@@ -2,7 +2,7 @@ baseURL = 'https://rang-jiao.github.io'
 languageCode = 'zh-cn'
 title = '交讓所生'
 subtitle = "求其诚者，非归饷也不可"  # 副标题
-imageUrl = "/images/avatar.png"  # 头像路径
+imageUrl = "/images/avatar.jpg"  # 头像路径
 imageTitle = "我的头像"
 theme = 'PaperMod'
 
@@ -50,6 +50,6 @@ theme = 'PaperMod'
       linkify = true
 
   [markup.highlight]
-    style = 'vs'  # 代码高亮主题
+    style = 'catppuccin-frappe'  # 代码高亮主题
     lineNos = true    # 显示行号
     codeFences = false # 启用代码围栏
