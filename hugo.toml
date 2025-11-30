@@ -8,6 +8,25 @@ theme = 'PaperMod'
   ShowShareButtons = true
   math = true
 
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "关于我"
+    url = "/about/"
+    weight = 10  # 权重越小越靠左
+
+  [[menu.main]]
+    identifier = "archives"
+    name = "归档"
+    url = "/archives/"
+    weight = 20
+
+  [[menu.main]]
+    identifier = "links"
+    name = "友链"
+    url = "/links/"
+    weight = 30
+
 # Markdown渲染配置（关键添加）
 [markup]
   defaultMarkdownHandler = 'goldmark'
