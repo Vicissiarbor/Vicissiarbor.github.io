@@ -49,4 +49,4 @@ theme = 'PaperMod'
   [markup.highlight]
     style = 'vs'  # 代码高亮主题
     lineNos = true    # 显示行号
-    codeFences = true # 启用代码围栏
+    codeFences = false # 启用代码围栏
