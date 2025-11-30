@@ -19,6 +19,15 @@ theme = 'PaperMod'
   [params.author]
     name = "交讓所生"
     image = "/images/avatar.jpg"
+  [
+params.homeInfoParams
+]
+    Title = "交讓所生"
+    Content = "求其诚者，非归饷也不可"
+    # 新增：主页头像配置（与 static/images/avatar.jpg 对应）
+    image = "/images/avatar.jpg"
+    # 可选：头像圆形裁剪（PaperMod 支持）
+    imageWidth = 120  # 头像宽度，单位 px
 
 [menu]
   [[menu.main]]
@@ -59,6 +68,6 @@ theme = 'PaperMod'
       linkify = true
 
   [markup.highlight]
-    style = 'catppuccin-frappe'  # 代码高亮主题
+    style = 'github'  # 代码高亮主题
     lineNos = true    # 显示行号
-    codeFences = false # 启用代码围栏
+    codeFences = true # 启用代码围栏
