@@ -84,20 +84,20 @@ $$
 ### 块级公式 - 矩阵
 $$
 \begin{pmatrix}
-a & b & c \\
-d & e & f \\
+a & b & c \\\\
+d & e & f \\\\
 g & h & i
 \end{pmatrix}
 $$
 $$
 \begin{pmatrix}
-x \\
-y \\
+x \\\\
+y \\\\
 z
 \end{pmatrix}=
 \begin{pmatrix}
-ax + by + cz \\
-dx + ey + fz \\
+ax + by + cz \\\\
+dx + ey + fz \\\\
 gx + hy + iz
 \end{pmatrix}
 $$
@@ -105,8 +105,8 @@ $$
 ### 块级公式 - 分段函数
 $$
 f(x) = \begin{cases}
-x^2 & \text{当 } x \geq 0 \text{ 时} \\
--x^2 & \text{当 } x < 0 \text{ 时} \\
+x^2 & \text{当 } x \geq 0 \text{ 时} \\\\
+-x^2 & \text{当 } x < 0 \text{ 时} \\\\
 0 & \text{当 } x = 0 \text{ 时}
 \end{cases}
 $$
@@ -148,7 +148,9 @@ $$
 
 ## 7. 引用块测试
 >  这是一个引用块
+
 >  可以包含多行内容
+
 >  引用可以嵌套其他Markdown语法：**粗体**、*斜体*、`代码`
 
 ## 8. 链接测试

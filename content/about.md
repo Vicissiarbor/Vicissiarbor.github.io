@@ -14,11 +14,12 @@ draft: false
 
 
 - 联系方式
-  -qqczfgxybk@petalmail.com
+  - qqczfgxybk@petalmail.com
 
 - 学习经历
-  -电子科技大学 本科在读
+  - 电子科技大学 本科在读
 
-# 想说什么
+# 说些什么
 天道几何，万品流形先自守；变分无限，孤心测度有同伦。
+
 ~~ 正文等我搭建完整这个博客再填 ~~
