@@ -4,13 +4,13 @@ title: "成人赋"
 
 date: 2024-04-13
 
-categories: \["文辞"]
+categories: ["文辞"]
 
-tags: \["骈赋"]
+tags: ["骈赋"]
 
 draft: false
 
-\# 自定义参数：标记这篇文章需要特殊样式
+# 自定义参数：标记这篇文章需要特殊样式
 
 customLayout: true
 
@@ -22,29 +22,26 @@ math: false  # 不需要LaTeX
 
 <style>
 
-/\* 竖排从右到左样式 \*/
 
 .vertical-rtl {
 
-&nbsp; writing-mode: vertical-rl;  /\* 竖排从右到左 \*/
+&nbsp; writing-mode: vertical-rl; 
+&nbsp; text-orientation: upright;  
 
-&nbsp; text-orientation: upright;  /\* 文字方向直立 \*/
+&nbsp; direction: rtl;           
 
-&nbsp; direction: rtl;             /\* 从右到左布局 \*/
-
-&nbsp; height: 100vh;              /\* 占满视口高度 \*/
+&nbsp; height: 100vh;       
 
 &nbsp; padding: 2rem;
 
-&nbsp; font-family: serif;         /\* 适合竖排的字体 \*/
+&nbsp; font-family: serif;   
 
-&nbsp; line-height: 1.8;           /\* 行间距 \*/
+&nbsp; line-height: 1.8;        
 
 }
 
 
 
-/\* 隐藏默认的文章元信息（可选） \*/
 
 .custom-hide-meta .post-meta {
 
