@@ -40,11 +40,14 @@ math: false  # 不需要LaTeX
 
 }
 .vertical-rtl p {
-  text-align: start;  
-  margin: 0 0 2rem 0; 
+  text-align: left !important;  
+  margin-block: 0 0em; 
 }
 
-
+.vertical-rtl h1 {
+  text-align: left !important;
+  margin-block-end: 1em; 
+}
 
 .custom-hide-meta .post-meta {
 
