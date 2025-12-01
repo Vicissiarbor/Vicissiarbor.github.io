@@ -39,7 +39,10 @@ math: false  # 不需要LaTeX
 &nbsp; line-height: 1.8;        
 
 }
-
+.vertical-rtl p {
+  text-align: start;  
+  margin: 0 0 2rem 0; 
+}
 
 
 
