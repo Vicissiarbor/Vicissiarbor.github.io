@@ -114,11 +114,13 @@ $$
 ---
 
 谈一下我为什么要写这个帖子。
-首先我相信这个方法一定有别的同学是会的，也许也有不少老师讲过，也许在网络上也可以找到，毕竟是一个并不出众的解法，**当然也希望有别的同学能受益于我的贴子，我想肯定有** [mobcent_phiz=https://bbs.uestc.edu.cn/static/image/smiley/alu/23.gif]
-但是没有人发在河畔上 [mobcent_phiz=https://bbs.uestc.edu.cn/static/image/smiley/alu/46.gif]
+首先我相信这个方法一定有别的同学是会的，也许也有不少老师讲过，也许在网络上也可以找到，毕竟是一个并不出众的解法，**当然也希望有别的同学能受益于我的贴子，我想肯定有**  ![河畔表情](https://bbs.uestc.edu.cn/static/image/smiley/alu/23.gif)
+但是没有人发在河畔上 ![河畔表情](https://bbs.uestc.edu.cn/static/image/smiley/alu/46.gif)
 
-鼠鼠水河畔一个学期了，~删除自我感动内容~，一是想着能不能抛砖引玉吸引别的同学多写一些知识内容，二也是自己想进步，想写好帖子就得多写嘛 [mobcent_phiz=https://bbs.uestc.edu.cn/static/image/smiley/alu/44.gif]，三也是充当一个对自己的记录吧。
+鼠鼠水河畔一个学期了，~删除自我感动内容~，一是想着能不能抛砖引玉吸引别的同学多写一些知识内容，二也是自己想进步，想写好帖子就得多写嘛  ![河畔表情](https://bbs.uestc.edu.cn/static/image/smiley/alu/44.gif)，三也是充当一个对自己的记录吧。
 
 ---
 
-欢迎各位讨论交流，发表任何观见解[mobcent_phiz=https://bbs.uestc.edu.cn/static/image/smiley/alu/40.gif]
+欢迎各位讨论交流，发表任何观见解![河畔表情](https://bbs.uestc.edu.cn/static/image/smiley/alu/40.gif)
+---
+本文转自[清水河畔](https://bbs.uestc.edu.cn/forum.php?mod=viewthread&tid=2422886)
