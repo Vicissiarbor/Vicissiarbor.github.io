@@ -123,4 +123,4 @@ $$
 
 欢迎各位讨论交流，发表任何观见解![河畔表情](https://bbs.uestc.edu.cn/static/image/smiley/alu/40.gif)
 ---
-本文转自[清水河畔](https://bbs.uestc.edu.cn/forum.php?mod=viewthread&tid=2422886)
+本文转自[清水河畔](https://bbs.uestc.edu.cn/thread/2422886)
