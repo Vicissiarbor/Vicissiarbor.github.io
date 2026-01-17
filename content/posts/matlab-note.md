@@ -1,7 +1,7 @@
 
 ---
 title: "MATLAB Note"
-date: 2026-1-17
+date: 2026-01-17
 categories: ["MATLAB"]
 tags: ["技术", "笔记"]
 draft: false
