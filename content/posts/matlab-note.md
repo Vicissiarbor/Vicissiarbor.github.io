@@ -35,7 +35,7 @@ MATLAB don't case blank but in defining array.
 - plus , `+`,make c = a + b.
   - A = A + 2 , means each elements of a plus 2.
   - strings plus means that next string follow the first string.
-  - row vector + colmun vector means :$a=[a_1,a_2],b=[b_1,b_2,b_3]^T$,so a + b =$$\begin{bmatrix}a_1+b_1&a_2+b_1\\a_1+b_2&a_2+b_2\\a_1+b_3&a_2+b_3\end{bmatrix}$$
+  - row vector + colmun vector means :$a=[a_1,a_2],b=[b_1,b_2,b_3]^T$,so a + b =$$\begin{bmatrix}a_1+b_1&a_2+b_1 \\ a_1+b_2&a_2+b_2 \\ a_1+b_3&a_2+b_3\end{bmatrix}$$
 - `sum` return sum of elements of A's first no-zero dimensionality . sum column in 2D matrix.
 - `cumsum` return sum to every elements and all elements before thenselves,don't change the dimensionalities of input. 
 - `movsum(A,k)` return sum of near k elements ,movsum see this element as center if k is odd , but see prior element as center if k is even.
