@@ -11,17 +11,25 @@ math: true  # 开启LaTeX支持
 # First
 ## simple 
 ### function
-| key function  | function                                | other                                                                                           |
-| ------------- | --------------------------------------- | ----------------------------------------------------------------------------------------------- |
-| clc           | clear order line                        | no                                                                                              |
-| diary         | record text of order line in diart text | use `get(0,'Diary')` to get modol now ; use `get aname`to record diary in a text mane of aname. |
-| type          | show text                               | only `.m` `.mlx` `.mlapp` can be open normally.                                                 |
-| format(style) | set output format                       | specific format will be statistics on other times                                               |
-| home          | move cursor                             | and swipe screen without delete orders                                                          |
-| iskeyword     | judge is input key word                 | return 1 as true and 0 as false                                                                 |
-| more          | paging output                           | maby have no using and i do't learn it now                                                      |
-| namelengthmax | return constant                         | max length of variable name                                                                     |
-| exist name    | check is name exist now                 | return number as [symple](https://ww2.mathworks.cn/help/releases/R2025a/matlab/ref/exist.html)  |
+| key function            | function                                                                       | other                                                                                                |
+| ----------------------- | ------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------- |
+| clc                     | clear order line                                                               | no                                                                                                   |
+| diary                   | record text of order line in diart text                                        | use `get(0,'Diary')` to get modol now ; use `get aname`to record diary in a text mane of aname.      |
+| type                    | show text                                                                      | only `.m` `.mlx` `.mlapp` can be open normally.                                                      |
+| format(style)           | set output format                                                              | specific format will be statistics on other times                                                    |
+| home                    | move cursor                                                                    | and swipe screen without delete orders                                                               |
+| iskeyword               | judge is input key word                                                        | return 1 as true and 0 as false                                                                      |
+| more                    | paging output                                                                  | maby have no using and i do't learn it now                                                           |
+| namelengthmax           | return constant                                                                | max length of variable name                                                                          |
+| exist name              | check is name exist now                                                        | return number as [symple](https://ww2.mathworks.cn/help/releases/R2025a/matlab/ref/exist.html)       |
+| if, elseif, else        | if expression follow the words is true,di statements.                          | use end after last else is a good habit.                                                             |
+| switch, case, otherwise | use otherwise like else in last line.                                          | use one end with switch but no with case.                                                            |
+| for                     | for index = begin:end ,means if index $\in$[bagin , end],do statements.        | [parfor](https://ww2.mathworks.cn/help/releases/R2025a/matlab/ref/parfor.html) , parallel for range. |
+| while                   | if expression is true , do statements.                                         | use `break` to end for and while directly,`continue` also.                                           |
+| try, catch              | do try's statements and catch error by catch.                                  | [try, catch](https://ww2.mathworks.cn/help/releases/R2025a/matlab/ref/try.html)                      |
+| return                  | [return](https://ww2.mathworks.cn/help/releases/R2025a/matlab/ref/return.html) | often used to end function.                                                                          |
+| pause                   | `pause` to wait pass any key and `pause(n)` to sleep n seconds.                |                                                                                                      |
+|                         |                                                                                |                                                                                                      |
 ### multi-line
 use `...` as blank between two line , andyou can't use it to break quotation mark`""`/`''`.
 ### variable name
@@ -72,6 +80,48 @@ MATLAB don't case blank but in defining array.
 - eq,`==`,check if two elements are equation.it can be use to find char in char array.
   - `>=` `<=` `>` `<`is easy . and `~=` is opposite with `==`.
 - `isapprox` to check equation with some small errors.[isapprox](https://ww2.mathworks.cn/help/releases/R2025a/matlab/ref/isapprox.html)
+- and `&` , if A and B has nonzero elements both at the same position,return ture , else return false.
+  - truth table: a = [true false],b = [true ; false],$$a\& b=\begin{bmatrix}true&false\\ true&false \end{bmatrix}$$
+  -Short-Circuit AND `&&` , logical short-circuit --- if a is false , do not calculate b and return false directly.
+- not `~` ,return opposite of A.
+- or `|` , if A and B is not all false , return ture.
+  - Short-Circuil OR `||` is similar as `&&`.
+- `xor` only one of a or b is true , xor(a,b) return ture.
+- `all` check if A's elements in first dimensionality is all true.
+- `any` check if A's elements in first dimensionality is all false. if all is false , return false.
+- `find` means to find all nonzero of A and return their indexes.
+- `islogical` is used to check is the input a logical matrix.
+- `logical` to turn value into lagical value.
+- `intersect(A,B)` return intersection of A and B.$\cap$ 
+- `ismember(A,B)` if element of A can be find in B , return ture at the location.
+- `setdiff(A,B)` return data that in A but not in B.
+- `setxor(A,B)` return $\complement_{A \cup B} (A \cap B)$ 
+- `union(A,B)` return union of A and B.$\cup$
+- `unique(A)` return A without repeats.
+- `allunique(A)` returns logical 1 (true) if all values in A are unique.
+- `numunique(A)` returns the number of unique values in A.
+- `ismembertol(A,B,tol)` find A's elements that in toleranec of B's elements.
+- [`uniquetol`](https://ww2.mathworks.cn/help/releases/R2025a/matlab/ref/uniquetol.html)
+- `bitand` and as each bit.
+- `bitor` `bitxor` 
+- `bitcmp` return complement as bit.
+- `bitget(A,bit)` , to get value of bit of A.
+- `bitset(A,bit)` return A's value and set value of bit of A as 1(open). 
+- `bitshift(A,k)` return A shift left k bits. it is equiv to times $2^k$.
+
+### priority
+1. `()`
+2. `.'` `.^` `'` `^`
+3. `.^-` `.^+` `.^~` `^-` `^+` `^~`
+4. `+` `-` `~` only with one element.
+5. `.*` `./` `.\` `*` `/` `\` 
+6. `+` `-`
+7. `:`
+8. `<` `<=` `>` `>=` `==` `~=`
+9. `&`
+10. `|`
+11. `&&`
+12. `||`
 
 ## use function
 MATLAB has many function to calculate.
