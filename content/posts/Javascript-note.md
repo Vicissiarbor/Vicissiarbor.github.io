@@ -1,3 +1,13 @@
+---
+title: "JavaScript Note"
+date: 2026-03-30
+categories: ["前端"]
+tags: ["技术", "笔记"]
+draft: false
+math: true  # 开启LaTeX支持
+---
+
+
 # Before We Start
 ## before technology
 In fact, my purpose to write this post is to practice my English and just review what i have learnt over the past month, I also want to take some notes. Of course, if this is useful for you, i will vary happy.
