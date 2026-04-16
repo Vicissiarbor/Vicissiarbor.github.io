@@ -21,7 +21,7 @@ math: true  # 开启LaTeX支持
  结构体：
  ```C
  struct Student{
-    char[10] id;
+    char id[10];
     int score;
  }
  ```
