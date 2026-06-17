@@ -26,3 +26,9 @@ JavaScript has seven data types. However, beginners usually use five of them:`st
 `number` means the data is a mathematical number, which can be used for counting and calculation.
 
 `string` is a sequence of characters, including letters, numbers (as text), and other symbols. It can be any length.
+
+`boolean` is a data type with only two values: `true` and `false`. It is important in logical statements.
+
+`undefined` means a variable has been declared but not assigned a value.
+
+`null` means a variable has no value. It is often used when something is intentionally empty.
