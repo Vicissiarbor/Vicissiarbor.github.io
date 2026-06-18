@@ -1,0 +1,109 @@
+@font-face {
+    font-family: '辰宇落雁';
+    src: url('../fonts/ChenYuluoyan-2.0-Thin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: '法华文楷';
+    src: url('../fonts/法华文楷标准版.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: '颜楷';
+    src: url('../fonts/王漢宗顏楷體繁.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+header{
+    position: fixed ;
+    top: 0;
+    width: 100%;
+    height: auto;
+    color: black;
+    font-family: "法华文楷","Noto Sans TC",Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2em;
+    justify-content: space-between;
+    display: flex;
+    max-width: 1200px;
+    left: 0;
+    right: 0;             /* 配合 left:0 和 margin:auto 实现居中 */
+    margin: 0 auto;       /* 水平居中 */
+    background: rgba(224, 255, 255, 0.6); /* 暖白半透，隐约透出背景 */
+    backdrop-filter: blur(10px);            /* 可选：毛玻璃效果，现代浏览器支持 */
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    color: black;
+    width: 100%;
+    max-width: 1200px;
+    left: 0;
+    right: 0;
+    margin: 0 auto ;
+    background: rgba(224, 255, 255, 0.6); /* 暖白半透，隐约透出背景 */
+    backdrop-filter: blur(10px);            /* 可选：毛玻璃效果，现代浏览器支持 */
+}
+header #header_logo{
+    font-family: "颜楷","法华文楷","Noto Sans TC", cursive;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #56624D;
+    margin: 0 30px 0 30px;
+    padding: 15px 0 10px 0;
+    display: inline-block;
+}
+
+header nav ul li{
+    margin: 0 10px 0 10px;
+    padding: 10px 0 10px 0;
+    list-style-type: none;
+    text-align: center;
+    display: inline;
+}
+section{
+    font-family: "霞鹜文楷 TC", "LXGW WenKai TC", cursive;
+    padding: 20px;
+    left: 0;
+    right: 0;
+    width: 80%;              /* 相对于父容器宽度 */
+    max-width: 1100px;        /* 限制最大宽度，大屏幕下不显得太宽 */
+    min-width: 400px;
+    margin: 100px auto 0;
+}
+.card{
+    /*font-family: "Noto Serif TC", "Times New Roman", serif;*/
+    font-family: "霞鹜文楷 TC", "LXGW WenKai TC", cursive;
+    font-size: 1.8em;
+    width: 80%;
+    border-radius: 16px;          /* 大圆角 */
+    border: 2px solid #ddd;       /* 浅灰边框 */
+    background: #fef9e8;
+    box-shadow: 1px 1px 8px rgba(255,255,200,0.6),
+    2px 2px 20px rgba(255,220,150,0.4);
+    padding: 20px;
+    left: 0;
+    right: 0;
+    margin: 0 auto 10px;
+}
+#titou{
+    font-size: 1.5em;
+    font-family: "霞鹜文楷 TC", "LXGW WenKai TC", cursive;
+    font-weight: lighter;
+    margin-top:97px;
+}
+
+body{
+    background-color: lightcyan;
+    font-family: "Noto Sans TC",Verdana, Geneva, Tahoma, sans-serif;
+}
+
+noscript{
+    position: relative;
+    color: red;
+    background-color: #fef9e8;
+}
