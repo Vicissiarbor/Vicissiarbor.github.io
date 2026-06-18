@@ -23,7 +23,7 @@ header{
     width: 100%;
     height: auto;
     color: black;
-    font-family: "法华文楷","Noto Sans TC",Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Segoe UI","法华文楷","Noto Sans TC",Verdana, Geneva, Tahoma, sans-serif;
     font-size: 2em;
     justify-content: space-between;
     display: flex;
@@ -49,7 +49,7 @@ footer{
     backdrop-filter: blur(10px);            /* 可选：毛玻璃效果，现代浏览器支持 */
 }
 header #header_logo{
-    font-family: "颜楷","法华文楷","Noto Sans TC", cursive;
+    font-family: "Segoe UI", "颜楷","法华文楷","Noto Sans TC", cursive;
     font-size: 1.5em;
     font-weight: bold;
     color: #56624D;
@@ -66,7 +66,7 @@ header nav ul li{
     display: inline;
 }
 section{
-    font-family: "霞鹜文楷 TC", "LXGW WenKai TC", cursive;
+    font-family: "Segoe UI", "霞鹜文楷 TC", "LXGW WenKai TC", cursive;
     padding: 20px;
     left: 0;
     right: 0;
@@ -77,7 +77,7 @@ section{
 }
 .card{
     /*font-family: "Noto Serif TC", "Times New Roman", serif;*/
-    font-family: "霞鹜文楷 TC", "LXGW WenKai TC", cursive;
+    font-family: "Segoe UI", "霞鹜文楷 TC", "LXGW WenKai TC", cursive;
     font-size: 1.8em;
     width: 80%;
     border-radius: 16px;          /* 大圆角 */
@@ -92,7 +92,7 @@ section{
 }
 #titou{
     font-size: 1.5em;
-    font-family: "霞鹜文楷 TC", "LXGW WenKai TC", cursive;
+    font-family: "Segoe UI", "霞鹜文楷 TC", "LXGW WenKai TC", cursive;
     font-weight: lighter;
     margin-top:97px;
 }
@@ -106,4 +106,19 @@ noscript{
     position: relative;
     color: red;
     background-color: #fef9e8;
+}
+
+a {
+    text-decoration: none;
+}
+
+.area a,
+.area a:link,
+.area a:visited,
+.area a:hover,
+.area a:active {
+    color: inherit;
+    background: transparent;
+    text-decoration: none;
+    font: inherit;
 }
