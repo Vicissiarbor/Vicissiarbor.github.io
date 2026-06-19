@@ -1,0 +1,101 @@
+/* ===== blog.css - 强科幻亮色版（电光蓝 + 荧光黄） ===== */
+/* 布局完全不变，只改颜色 / 阴影 / 头部透明 */
+
+/* ---------- 全局字体（系统最优） ---------- */
+body,
+header,
+header #header_logo,
+section,
+.card,
+#titou,
+footer,
+nav,
+nav ul li a,
+.area a {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 
+                 "Segoe UI", Roboto, "Helvetica Neue", Arial,
+                 "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", 
+                 "Noto Sans SC", sans-serif !important;
+}
+
+/* ---------- 背景（更冷的浅蓝灰） ---------- */
+body {
+    background-color: #dceaf5;   /* 冷调淡蓝灰，衬托电光色 */
+}
+
+/* ---------- 头部：彻底透明，无阴影无边框 ---------- */
+header {
+    background: transparent !important;        /* 完全透明，与背景融为一体 */
+    backdrop-filter: none !important;         /* 去掉毛玻璃 */
+    box-shadow: none !important;              /* 去掉任何阴影 */
+    border-bottom: none !important;           /* 去掉边框 */
+    /* 位置、宽度、最大宽度、居中完全继承原样式，不做任何改动 */
+}
+
+/* 头部 logo 文字颜色 + 发光（科幻感） */
+header #header_logo {
+    color: #0088ff;                  /* 电光蓝 */
+    text-shadow: 0 0 12px rgba(0, 136, 255, 0.6), 
+                 0 0 30px rgba(0, 200, 255, 0.3); /* 双光晕 */
+}
+
+/* ---------- 导航链接 ---------- */
+.area a,
+.area a:link,
+.area a:visited {
+    color: #0088ff;                  /* 亮蓝 */
+    transition: all 0.25s;
+}
+.area a:hover,
+.area a:active {
+    color: #ffdd00;                  /* 荧光黄高亮 */
+    text-shadow: 0 0 16px rgba(255, 220, 0, 0.7);
+}
+
+/* ---------- 卡片（强科幻感） ---------- */
+.card {
+    background: #fefce6;              /* 极淡黄底（保持亮调） */
+    border: 2px solid #00b4ff;        /* 电光蓝边框 */
+    border-radius: 16px;
+    box-shadow: 
+        0 4px 20px rgba(0, 180, 255, 0.35),
+        0 0 60px rgba(0, 100, 255, 0.15),
+        inset 0 0 30px rgba(0, 180, 255, 0.05); /* 内发光增加科技感 */
+    color: #0a1a2a;
+}
+
+/* 卡片内链接 */
+.card a {
+    color: #0088ff;
+}
+.card a:hover {
+    color: #ffdd00;
+    text-shadow: 0 0 12px rgba(255, 220, 0, 0.5);
+}
+
+/* ---------- 页脚（透明化处理，轻微可见） ---------- */
+footer {
+    background: rgba(220, 234, 245, 0.3);  /* 极淡背景，几乎透明 */
+    backdrop-filter: none;
+    box-shadow: none;
+    border-top: 1px solid rgba(0, 180, 255, 0.15); /* 淡蓝细线，保留一点边界 */
+    color: #0066bb;
+}
+
+/* ---------- 其他 ---------- */
+#titou {
+    color: #0077cc;
+}
+
+noscript {
+    background-color: #fef9e8;
+    color: #c0392b;
+    border: 1px solid #ffb3b3;
+    border-radius: 8px;
+    padding: 4px 10px;
+}
+
+/* 头部 logo 图片增加光晕（可选） */
+#header_logo img {
+    filter: drop-shadow(0 0 8px rgba(0, 136, 255, 0.5));
+}
