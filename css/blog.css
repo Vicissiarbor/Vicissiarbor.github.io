@@ -3,21 +3,20 @@
 
 /* ---------- 全局字体（系统最优） ---------- */
 body,
-header,
-header #header_logo,
 section,
 .card,
 #titou,
 footer,
-nav,
-nav ul li a,
-.area a {
+nav{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 
                  "Segoe UI", Roboto, "Helvetica Neue", Arial,
                  "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", 
                  "Noto Sans SC", sans-serif !important;
 }
-
+#main-header,
+#main-header * {   /* 所有子元素统统继承楷体 */
+    font-family: "KaiTi", "STKaiti", "华文楷体", serif !important;
+}
 /* ---------- 背景（更冷的浅蓝灰） ---------- */
 body {
     background-color: #dceaf5;   /* 冷调淡蓝灰，衬托电光色 */
@@ -26,7 +25,7 @@ body {
 /* ---------- 头部：彻底透明，无阴影无边框 ---------- */
 header {
     background: transparent !important;        /* 完全透明，与背景融为一体 */
-    backdrop-filter: none !important;         /* 去掉毛玻璃 */
+    /*backdrop-filter: none !important;         /* 去掉毛玻璃 */
     box-shadow: none !important;              /* 去掉任何阴影 */
     border-bottom: none !important;           /* 去掉边框 */
     /* 位置、宽度、最大宽度、居中完全继承原样式，不做任何改动 */
@@ -45,11 +44,6 @@ header #header_logo {
 .area a:visited {
     color: #0088ff;                  /* 亮蓝 */
     transition: all 0.25s;
-}
-.area a:hover,
-.area a:active {
-    color: #ffdd00;                  /* 荧光黄高亮 */
-    text-shadow: 0 0 16px rgba(255, 220, 0, 0.7);
 }
 
 /* ---------- 卡片（强科幻感） ---------- */
