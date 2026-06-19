@@ -1,6 +1,5 @@
 /* ===== blog.css - 强科幻亮色版（电光蓝 + 荧光黄） ===== */
-/* 布局完全不变，只改颜色 / 阴影 / 头部透明 */
-
+/*===== 在index.css之后使用 =====*/
 /* ---------- 全局字体（系统最优） ---------- */
 body,
 section,
@@ -13,13 +12,14 @@ nav{
                  "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", 
                  "Noto Sans SC", sans-serif !important;
 }
+/*----------- 题头楷体 ------------*/
 #main-header,
-#main-header * {   /* 所有子元素统统继承楷体 */
+#main-header * {
     font-family: "KaiTi", "STKaiti", "华文楷体", serif !important;
 }
 /* ---------- 背景（更冷的浅蓝灰） ---------- */
 body {
-    background-color: #dceaf5;   /* 冷调淡蓝灰，衬托电光色 */
+    background-color: #dceaf5;
 }
 
 /* ---------- 头部：彻底透明，无阴影无边框 ---------- */
@@ -46,8 +46,7 @@ header #header_logo {
 
 /* ---------- 卡片（强科幻感） ---------- */
 .card {
-    background: #fefce6;              /* 极淡黄底（保持亮调） */
-    border: 2px solid #00b4ff;        /* 电光蓝边框 */
+    background: #fefce6;              
     border-radius: 16px;
     box-shadow: 
         0 4px 20px rgba(0, 180, 255, 0.35),
