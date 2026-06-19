@@ -34,8 +34,6 @@ header {
 /* 头部 logo 文字颜色 + 发光（科幻感） */
 header #header_logo {
     color: #0088ff;                  /* 电光蓝 */
-    text-shadow: 0 0 12px rgba(0, 136, 255, 0.6), 
-                 0 0 30px rgba(0, 200, 255, 0.3); /* 双光晕 */
 }
 
 /* ---------- 导航链接 ---------- */
@@ -87,9 +85,4 @@ noscript {
     border: 1px solid #ffb3b3;
     border-radius: 8px;
     padding: 4px 10px;
-}
-
-/* 头部 logo 图片增加光晕（可选） */
-#header_logo img {
-    filter: drop-shadow(0 0 8px rgba(0, 136, 255, 0.5));
 }
