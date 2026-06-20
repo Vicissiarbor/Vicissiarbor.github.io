@@ -29,7 +29,7 @@ code.hljs {
 .hljs-template-variable,
 .hljs-type,
 .hljs-variable.language_ {
-    color: #d73a49;        /* 红色 */
+    color: #d73a49;        
 }
 
 /* ===== 函数名、类名 ===== */
@@ -37,7 +37,7 @@ code.hljs {
 .hljs-title.class_,
 .hljs-title.class_.inherited__,
 .hljs-title.function_ {
-    color: #6f42c1;        /* 紫色 */
+    color: #5799df;        
 }
 
 /* ===== 属性、数字、运算符、变量 ===== */
@@ -51,27 +51,29 @@ code.hljs {
 .hljs-selector-class,
 .hljs-selector-id,
 .hljs-variable {
-    color: #005cc5;        /* 亮蓝 */
+    color: #f42e2e;        
 }
 
 /* ===== 字符串、正则 ===== */
 .hljs-meta .hljs-string,
 .hljs-regexp,
 .hljs-string {
-    color: #032f62;        /* 深蓝 */
+    color: #4c9efc;        
+    font-weight: 700;
 }
 
 /* ===== 内置函数、符号 ===== */
 .hljs-built_in,
 .hljs-symbol {
-    color: #e36209;        /* 橙色 */
+    color: #24a4e4;        
+    font-weight: 700;
 }
 
 /* ===== 注释、代码块引用、公式 ===== */
 .hljs-code,
 .hljs-comment,
 .hljs-formula {
-    color: #6a737d;        /* 灰色 */
+    color: #36b94a;        
 }
 
 /* ===== 标签名、选择器 ===== */
@@ -79,45 +81,45 @@ code.hljs {
 .hljs-quote,
 .hljs-selector-pseudo,
 .hljs-selector-tag {
-    color: #22863a;        /* 绿色 */
+    color: #3239f0;        
 }
 
 /* ===== 替换文本（subst） ===== */
 .hljs-subst {
-    color: #24292e;        /* 深灰 */
+    color: #24292e;        
 }
 
 /* ===== 章节标题（section） ===== */
 .hljs-section {
-    color: #005cc5;        /* 亮蓝 */
-    font-weight: 700;      /* 加粗 */
+    color: #005cc5;        
+    font-weight: 700;      
 }
 
 /* ===== 列表项标记（bullet） ===== */
 .hljs-bullet {
-    color: #735c0f;        /* 棕色 */
+    color: #735c0f;        
 }
 
 /* ===== 强调（斜体） ===== */
 .hljs-emphasis {
-    color: #24292e;        /* 深灰 */
-    font-style: italic;    /* 斜体 */
+    color: #24292e;        
+    font-style: italic;   
 }
 
 /* ===== 加粗 ===== */
 .hljs-strong {
-    color: #24292e;        /* 深灰 */
-    font-weight: 700;      /* 加粗 */
+    color: #24292e;        
+    font-weight: 700;      
 }
 
 /* ===== 新增代码（diff） ===== */
 .hljs-addition {
-    color: #22863a;        /* 绿色 */
-    background-color: #f0fff4;  /* 浅绿背景 */
+    color: #22863a;        
+    background-color: #f0fff4;  
 }
 
 /* ===== 删除代码（diff） ===== */
 .hljs-deletion {
-    color: #b31d28;        /* 红色 */
-    background-color: #ffeef0;  /* 浅红背景 */
+    color: #b31d28;        
+    background-color: #ffeef0;  
 }
