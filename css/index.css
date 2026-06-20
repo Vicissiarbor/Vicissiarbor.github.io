@@ -50,7 +50,7 @@ footer{
     backdrop-filter: blur(10px);            /* 可选：毛玻璃效果，现代浏览器支持 */
 }
 header #header_logo{
-    font-family: "Segoe UI", "颜楷","法华文楷","Noto Sans TC", cursive;
+    font-family: "Segoe UI", "颜楷","法华文楷","KaiTi", "STKaiti","Noto Sans TC", cursive;
     font-size: 1.5em;
     font-weight: bold;
     color: #56624D;
@@ -93,7 +93,7 @@ section{
 }
 #titou{
     font-size: 1.5em;
-    font-family: "Segoe UI", "霞鹜文楷 TC", "LXGW WenKai TC", cursive;
+    font-family: "Segoe UI", "霞鹜文楷 TC", "LXGW WenKai TC","KaiTi", "STKaiti", cursive;
     font-weight: lighter;
     margin-top:97px;
 }
