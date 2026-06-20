@@ -2,7 +2,7 @@
 - 电子邮箱：{{EMAIL}}
 - 教育经历：[电子科技大学](https://www.uestc.edu.cn/)
   - [信息与通信工程学院](https://www.sice.uestc.edu.cn/)，2025.09--2026.06
-  - [计算机科学与工程学院（网络空间安全学院）](https://www.scse.uestc.edu.cn/)，2026-07--现在
+  - [计算机科学与工程学院（网络空间安全学院）](https://www.scse.uestc.edu.cn/)，2026.07--现在
 - GitHub 账号：[Vicissiarbor](https://github.com/Vicissiarbor)
 - River Side 账号：[交讓](https://river-side.cc/u/%E4%BA%A4%E8%AE%93/summary)
 
