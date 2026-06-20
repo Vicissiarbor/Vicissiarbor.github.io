@@ -1,10 +1,123 @@
-pre code.hljs{display:block;overflow-x:auto;padding:1em}code.hljs{padding:3px 5px}/*!
-  Theme: GitHub
-  Description: Light theme as seen on github.com
-  Author: github.com
-  Maintainer: @Hirse
-  Updated: 2021-05-15
+/* ================================================================
+   highlight.js GitHub 主题（浅色）
+   来源：https://github.com/highlightjs/highlight.js
+   ================================================================ */
 
-  Outdated base version: https://github.com/primer/github-syntax-light
-  Current colors taken from GitHub's CSS
-*/.hljs{color:#24292e;background:#fff}.hljs-doctag,.hljs-keyword,.hljs-meta .hljs-keyword,.hljs-template-tag,.hljs-template-variable,.hljs-type,.hljs-variable.language_{color:#d73a49}.hljs-title,.hljs-title.class_,.hljs-title.class_.inherited__,.hljs-title.function_{color:#6f42c1}.hljs-attr,.hljs-attribute,.hljs-literal,.hljs-meta,.hljs-number,.hljs-operator,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-id,.hljs-variable{color:#005cc5}.hljs-meta .hljs-string,.hljs-regexp,.hljs-string{color:#032f62}.hljs-built_in,.hljs-symbol{color:#e36209}.hljs-code,.hljs-comment,.hljs-formula{color:#6a737d}.hljs-name,.hljs-quote,.hljs-selector-pseudo,.hljs-selector-tag{color:#22863a}.hljs-subst{color:#24292e}.hljs-section{color:#005cc5;font-weight:700}.hljs-bullet{color:#735c0f}.hljs-emphasis{color:#24292e;font-style:italic}.hljs-strong{color:#24292e;font-weight:700}.hljs-addition{color:#22863a;background-color:#f0fff4}.hljs-deletion{color:#b31d28;background-color:#ffeef0}
+/* ----- 代码块容器（pre）----- */
+pre code.hljs {
+    display: block;
+    overflow-x: auto;
+    padding: 1em;
+}
+
+/* ----- 行内代码 ----- */
+code.hljs {
+    padding: 3px 5px;
+}
+
+/* ===== 基础颜色 ===== */
+.hljs {
+    color: #24292e;        /* 默认文字：深灰（接近黑色） */
+    background: #ffffff;   /* 背景：白色 */
+}
+
+/* ===== 关键字、类型、标签 ===== */
+.hljs-doctag,
+.hljs-keyword,
+.hljs-meta .hljs-keyword,
+.hljs-template-tag,
+.hljs-template-variable,
+.hljs-type,
+.hljs-variable.language_ {
+    color: #d73a49;        /* 红色 */
+}
+
+/* ===== 函数名、类名 ===== */
+.hljs-title,
+.hljs-title.class_,
+.hljs-title.class_.inherited__,
+.hljs-title.function_ {
+    color: #6f42c1;        /* 紫色 */
+}
+
+/* ===== 属性、数字、运算符、变量 ===== */
+.hljs-attr,
+.hljs-attribute,
+.hljs-literal,
+.hljs-meta,
+.hljs-number,
+.hljs-operator,
+.hljs-selector-attr,
+.hljs-selector-class,
+.hljs-selector-id,
+.hljs-variable {
+    color: #005cc5;        /* 亮蓝 */
+}
+
+/* ===== 字符串、正则 ===== */
+.hljs-meta .hljs-string,
+.hljs-regexp,
+.hljs-string {
+    color: #032f62;        /* 深蓝 */
+}
+
+/* ===== 内置函数、符号 ===== */
+.hljs-built_in,
+.hljs-symbol {
+    color: #e36209;        /* 橙色 */
+}
+
+/* ===== 注释、代码块引用、公式 ===== */
+.hljs-code,
+.hljs-comment,
+.hljs-formula {
+    color: #6a737d;        /* 灰色 */
+}
+
+/* ===== 标签名、选择器 ===== */
+.hljs-name,
+.hljs-quote,
+.hljs-selector-pseudo,
+.hljs-selector-tag {
+    color: #22863a;        /* 绿色 */
+}
+
+/* ===== 替换文本（subst） ===== */
+.hljs-subst {
+    color: #24292e;        /* 深灰 */
+}
+
+/* ===== 章节标题（section） ===== */
+.hljs-section {
+    color: #005cc5;        /* 亮蓝 */
+    font-weight: 700;      /* 加粗 */
+}
+
+/* ===== 列表项标记（bullet） ===== */
+.hljs-bullet {
+    color: #735c0f;        /* 棕色 */
+}
+
+/* ===== 强调（斜体） ===== */
+.hljs-emphasis {
+    color: #24292e;        /* 深灰 */
+    font-style: italic;    /* 斜体 */
+}
+
+/* ===== 加粗 ===== */
+.hljs-strong {
+    color: #24292e;        /* 深灰 */
+    font-weight: 700;      /* 加粗 */
+}
+
+/* ===== 新增代码（diff） ===== */
+.hljs-addition {
+    color: #22863a;        /* 绿色 */
+    background-color: #f0fff4;  /* 浅绿背景 */
+}
+
+/* ===== 删除代码（diff） ===== */
+.hljs-deletion {
+    color: #b31d28;        /* 红色 */
+    background-color: #ffeef0;  /* 浅红背景 */
+}
