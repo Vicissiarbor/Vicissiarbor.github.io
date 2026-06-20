@@ -33,6 +33,7 @@ header{
     margin: 0 auto;       /* 水平居中 */
     background: rgba(224, 255, 255, 0.6); /* 暖白半透，隐约透出背景 */
     backdrop-filter: blur(10px);            /* 可选：毛玻璃效果，现代浏览器支持 */
+    z-index: 1000;
 }
 footer{
     display: flex;
