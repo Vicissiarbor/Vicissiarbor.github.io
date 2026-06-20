@@ -10,7 +10,8 @@ const posts = [
         date: '2026-04-09',
         author: '交讓',
         tags: ["C语言","转专业","码图"],
-        summary: '祝同学们取得理想的结果'
+        category: '编程',
+        summary: '祝同学们取得理想的结果',
     },
     {
         id: 'dfuction',
@@ -18,7 +19,8 @@ const posts = [
         date: '2025-12-26',
         author: '交讓',
         tags: ["数学", "微积分","微分方程"],
-        summary: '期末周发疯作品，首发于河畔'
+        category: '数学',
+        summary: '期末周发疯作品，首发于河畔',
     },
     {
         id: 'relook_of_senior_high',
@@ -26,7 +28,8 @@ const posts = [
         date: '2025-12-01',
         author: '交讓',
         tags: ['随笔'],
-        summary: '我终于有空，也有精力，也有动力，也有内容，来写下这篇文章了'
+        category: '文辞',
+        summary: '我终于有空，也有精力，也有动力，也有内容，来写下这篇文章了',
     },
     {
         id: 'first-post',           // 对应 post.html?page=first-post
@@ -34,8 +37,9 @@ const posts = [
         date: '2025-11-30',
         author: '交讓',
         tags: ['test'],
+        category: '技术',
         // 可选：摘要 (summary) 可留空，则自动取正文前几个字
-        summary: '本文测试了Markdown、代码块、LaTeX公式等所有功能。'
+        summary: '本文测试了Markdown、代码块、LaTeX公式等所有功能。',
     },
     {
         id: 'fu_of_u18',
@@ -43,7 +47,8 @@ const posts = [
         date: '2025-12-01',
         author: '交讓',
         tags: ['随笔'],
-        summary: '十八岁生日所作'
+        summary: '十八岁生日所作',
+        category: '文辞',
     },
 ];
 
