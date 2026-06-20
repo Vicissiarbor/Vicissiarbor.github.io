@@ -1,13 +1,11 @@
-// post.js - 文章加载逻辑（纯 script 标签，无 ES Module）
+// post.js（完整版）
 (function() {
-    // 获取 URL 中的 page 参数
     const params = new URLSearchParams(window.location.search);
     const page = params.get('page');
-
     const contentEl = document.getElementById('content');
 
     if (!page) {
-        contentEl.innerHTML = '<p style="color:#c0392b;">❌ 缺少文章标识（?page=xxx）</p>';
+        window.location.href = 'index.html';
         return;
     }
 
@@ -19,11 +17,19 @@
             return res.text();
         })
         .then(markdown => {
-            // 1. marked 解析 Markdown（全局 marked 变量）
+            // 1. marked 解析
             let html = marked.parse(markdown);
             contentEl.innerHTML = html;
 
-            // 2. KaTeX 自动渲染公式（全局 renderMathInElement 变量）
+            // 2. highlight.js 高亮代码块
+            if (typeof hljs !== 'undefined') {
+                // 查找所有代码块并高亮
+                document.querySelectorAll('.markdown-body pre code').forEach(block => {
+                    hljs.highlightElement(block);
+                });
+            }
+
+            // 3. KaTeX 渲染公式
             if (typeof renderMathInElement === 'function') {
                 renderMathInElement(contentEl, {
                     delimiters: [
@@ -32,8 +38,6 @@
                     ],
                     throwOnError: false
                 });
-            } else {
-                console.warn('renderMathInElement 未加载，公式将保留为纯文本。');
             }
         })
         .catch(err => {

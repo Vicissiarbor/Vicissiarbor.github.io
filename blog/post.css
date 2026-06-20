@@ -1,10 +1,8 @@
 /* ---------- 文章内代码块浅色主题（压过 highlight.js 样式） ---------- */
 
 /* pre 容器背景 */
-.markdown-body pre,
-.markdown-body pre code.hljs {
+.markdown-body pre{
     background: #f5f5f5 !important;   /* 浅灰背景，用 !important 压过 highlight */
-    color: #1a1a1a;
     padding: 16px;
     border-radius: 8px;
     overflow-x: auto;
@@ -19,7 +17,6 @@
     background: transparent !important;
     padding: 0;
     border-radius: 0;
-    color: inherit;
     border: none;
 }
 
@@ -35,7 +32,7 @@
 
 /* ---------- 文章正文放大 ---------- */
 .markdown-body {
-    font-size: 1.5em;   /* 相对于父级字体放大 1.5 倍 */
+    font-size: 1.3em;   /* 相对于父级字体放大 1.5 倍 */
 }
 
 /* ---------- 表格边框（分界线） ---------- */
