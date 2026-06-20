@@ -44,7 +44,7 @@ const posts = [
     {
         id: 'fu_of_u18',
         title: '成人赋',
-        date: '2025-12-01',
+        date: '2024-04-13',
         author: '交讓',
         tags: ['随笔'],
         summary: '十八岁生日所作',
