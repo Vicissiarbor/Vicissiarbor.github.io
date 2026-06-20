@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>交讓所生 · 文章</title>
+    <title>交讓所生 · 关于</title>
     <!-- 博客全局样式（布局、颜色、代码块浅色） -->
     <link rel="stylesheet" href="../css/index.css">
-    <link rel="stylesheet" href="../css/blog.css">
-    <link rel="stylesheet" href="post.css">
+    <link rel="stylesheet" href="../blog/post.css">
     <!-- KaTeX 核心样式（必须） -->
-    <link rel="stylesheet" href="libs/katex/katex.min.css">
-    <link rel="stylesheet" href="libs/highlight-github.min.css">
+    <link rel="stylesheet" href="../blog/libs/katex/katex.min.css">
+    <link rel="stylesheet" href="../blog/libs/highlight-github.min.css">
 </head>
 <body>
     <!-- 头部（复用主站风格） -->
@@ -21,10 +20,8 @@
         </div>
         <nav>
             <ul class="navigation area">
-                <li><a href="index.html">归档</a></li>
-                <li><a>友链</a></li>
-                <li><a href="index.html">首页</a></li>
-                <li><a href="about/about.html">关于</a></li>
+                <li><a href="../index.html">主站</a></li>
+                <li><a href="about.html" style="color:#0088ff; font-weight:bold;">关于</a></li>
             </ul>
         </nav>
     </header>
@@ -43,14 +40,14 @@
 
     <!-- ========== 所有库使用传统 script 加载 ========== -->
     <!-- 1. marked (UMD) -->
-    <script src="libs/marked.min.js"></script>
+    <script src="../blog/libs/marked.min.js"></script>
     <!-- 2. KaTeX 核心 -->
-    <script src="libs/katex/katex.min.js"></script>
+    <script src="../blog/libs/katex/katex.min.js"></script>
     <!-- 3. KaTeX 自动渲染插件 -->
-    <script src="libs/katex/contrib/auto-render.min.js"></script>
+    <script src="../blog/libs/katex/contrib/auto-render.min.js"></script>
     <!-- 4. 语法高亮 -->
-    <script src="libs/highlight.min.js"></script>
+    <script src="../blog/libs/highlight.min.js"></script>
     <!-- 5. 业务逻辑（外部独立文件） -->
-    <script src="post.js"></script>
+    <script src="about.js"></script>
 </body>
 </html>
