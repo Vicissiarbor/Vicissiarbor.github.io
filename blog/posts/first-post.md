@@ -1,13 +1,3 @@
-
----
-title: "功能综合测试"
-date: 2025-11-30
-categories: ["其他"]
-tags: ["技术", "Hugo"]
-draft: false
-math: true  # 开启LaTeX支持
----
-
 # 综合功能测试文档
 
 本文档用于测试博客的所有Markdown功能。
@@ -18,7 +8,7 @@ math: true  # 开启LaTeX支持
 
 **本地图片**（存放在 `static/images/` 目录）：
 
-![本地测试图片](/images/test.jpg)
+![本地测试图片](../../images/logo/leaves.png)
 
 *图1：本地图片测试*
 

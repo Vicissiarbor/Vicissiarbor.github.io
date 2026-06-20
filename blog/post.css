@@ -1,0 +1,34 @@
+/* ---------- 文章内代码块浅色主题（压过 highlight.js 样式） ---------- */
+
+/* pre 容器背景 */
+.markdown-body pre,
+.markdown-body pre code.hljs {
+    background: #f5f5f5 !important;   /* 浅灰背景，用 !important 压过 highlight */
+    color: #1a1a1a;
+    padding: 16px;
+    border-radius: 8px;
+    overflow-x: auto;
+    border: 1px solid #e0e0e0;
+    font-family: 'JetBrains Mono', 'Fira Code', monospace;
+    font-size: 0.9em;
+    line-height: 1.6;
+}
+
+/* code 本身透明，让 pre 的背景透出来 */
+.markdown-body pre code.hljs {
+    background: transparent !important;
+    padding: 0;
+    border-radius: 0;
+    color: inherit;
+    border: none;
+}
+
+/* 行内代码 */
+.markdown-body code:not(pre code) {
+    background: #f0f0f0;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: monospace;
+    font-size: 0.9em;
+    color: #d14;
+}
