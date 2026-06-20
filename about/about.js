@@ -19,13 +19,6 @@
 
             // 2. marked 解析
             let html = marked.parse(markdownWithEmail);
-            
-            // 3. 再把纯文本邮箱转成 mailto 链接
-            //    匹配邮箱格式，包成 <a href="mailto:...">
-            html = html.replace(
-                /([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})/g,
-                '<a href="mailto:$1">$1</a>'
-            );
 
             contentEl.innerHTML = html;
 
