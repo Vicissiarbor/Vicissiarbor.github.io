@@ -1,5 +1,5 @@
 # 个人介绍
-- 电子邮箱：[qqczfgxybk@petalmail.com](mailto:qqczfgxybk@petalmail.com)
+- 电子邮箱：{{EMAIL}}
 - 教育经历：[电子科技大学](https://www.uestc.edu.cn/)
   - [信息与通信工程学院](https://www.sice.uestc.edu.cn/)，2025.09--2026.06
   - [计算机科学与工程学院（网络空间安全学院）](https://www.scse.uestc.edu.cn/)，2026-07--现在

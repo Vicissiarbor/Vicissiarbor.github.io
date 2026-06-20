@@ -2,7 +2,7 @@
 
 (function() {
     const contentEl = document.getElementById('content');
-    const mdFile = './about.md';   // 固定加载同目录下的 about.md
+    const mdFile = './about.md';
 
     fetch(mdFile)
         .then(res => {
@@ -10,18 +10,33 @@
             return res.text();
         })
         .then(markdown => {
-            // 1. marked 解析
-            let html = marked.parse(markdown);
+            // 1. 先替换 Markdown 里的邮箱占位符
+            //    约定在 .md 里写 {{EMAIL}} 作为占位
+            const user = 'qqczfgxybk';
+            const domain = 'petalmail.com';
+            const email = user + '@' + domain;
+            const markdownWithEmail = markdown.replace(/{{EMAIL}}/g, email);
+
+            // 2. marked 解析
+            let html = marked.parse(markdownWithEmail);
+            
+            // 3. 再把纯文本邮箱转成 mailto 链接
+            //    匹配邮箱格式，包成 <a href="mailto:...">
+            html = html.replace(
+                /([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})/g,
+                '<a href="mailto:$1">$1</a>'
+            );
+
             contentEl.innerHTML = html;
 
-            // 2. highlight.js 高亮
+            // 4. highlight.js 高亮
             if (typeof hljs !== 'undefined') {
                 document.querySelectorAll('.markdown-body pre code').forEach(block => {
                     hljs.highlightElement(block);
                 });
             }
 
-            // 3. KaTeX 渲染公式
+            // 5. KaTeX 渲染公式
             if (typeof renderMathInElement === 'function') {
                 renderMathInElement(contentEl, {
                     delimiters: [
