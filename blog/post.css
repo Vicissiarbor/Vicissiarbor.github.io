@@ -57,3 +57,24 @@
 .markdown-body tr:nth-child(even) {
     background: rgba(0, 0, 0, 0.02);      /* 极淡的斑马纹，便于阅读 */
 }
+
+/* ---------- 引用块样式 ---------- */
+.markdown-body blockquote {
+    margin: 1em 0;
+    padding: 0.5em 1em 0.5em 1.2em;
+    background: rgba(0, 136, 255, 0.05);   /* 极淡蓝色背景，与你的冷色调搭 */
+    border-left: 4px solid #0088ff;         /* 醒目的蓝色竖线 */
+    border-radius: 0 6px 6px 0;            /* 右侧轻微圆角，左侧保持直角 */
+    color: #2c3e50;                        /* 深灰文字，保证可读性 */
+}
+
+/* 引用块内的段落保持原有间距 */
+.markdown-body blockquote p {
+    margin: 0.5em 0;
+}
+
+/* 嵌套引用块：背景加深、竖线变细（可选） */
+.markdown-body blockquote blockquote {
+    background: rgba(0, 136, 255, 0.08);
+    border-left-width: 3px;
+}
