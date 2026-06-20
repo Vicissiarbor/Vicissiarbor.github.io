@@ -1,0 +1,52 @@
+/* link/link.css - 友链页面专属样式，配合 ../css/index.css 使用 */
+
+.link-item {
+    font-size: 0.7em;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+.link-item:last-child {
+    border-bottom: none;
+}
+
+.link-name {
+    font-weight: bold;
+    min-width: 120px;
+}
+
+.link-desc {
+    color: #555;
+    margin-left: 10px;
+    font-size: 0.9em;
+}
+
+.link-url {
+    margin-left: auto;
+    font-size: 0.85em;
+    color: #0088ff;
+}
+
+.link-url a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.link-url a:hover {
+    text-decoration: underline;
+}
+
+/* 手机端适配 */
+@media (max-width: 600px) {
+    .link-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .link-url {
+        margin-left: 0;
+        margin-top: 4px;
+    }
+}
