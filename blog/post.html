@@ -4,23 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>文章 · 交讓所生</title>
-    <!-- 1. 博客全局样式（含布局、颜色、代码块浅色） -->
+    <!-- 博客全局样式（布局、颜色、代码块浅色） -->
     <link rel="stylesheet" href="blog.css">
-    <!-- 2. KaTeX 样式（必须） -->
+    <!-- KaTeX 核心样式（必须） -->
     <link rel="stylesheet" href="libs/katex/katex.min.css">
-    <!-- 3. 配置模块映射（本地库） -->
-    <script type="importmap">
-    {
-        "imports": {
-            "marked": "./libs/marked.esm.js",
-            "katex": "./libs/katex/katex.min.js",
-            "marked-katex-extension": "./libs/marked-katex-extension.js"
-        }
-    }
-    </script>
 </head>
 <body>
-    <!-- 复用主站头部，保持风格统一 -->
+    <!-- 头部（复用主站风格） -->
     <header id="main-header">
         <div id="header_logo">
             <img src="../images/logo/leaves.png" style="height:1.5em;vertical-align:middle;" alt="博客站标识">
@@ -48,7 +38,15 @@
         两树对生，一树枯则一树生；如是岁更，终不惧生惧枯也。
     </footer>
 
-    <!-- 核心逻辑（外部独立文件） -->
-    <script type="module" src="post.js"></script>
+    <!-- ========== 所有库使用传统 script 加载 ========== -->
+    <!-- 1. marked (UMD) -->
+    <script src="libs/marked.min.js"></script>
+    <!-- 2. KaTeX 核心 -->
+    <script src="libs/katex/katex.min.js"></script>
+    <!-- 3. KaTeX 自动渲染插件 -->
+    <script src="libs/katex/contrib/auto-render.min.js"></script>
+
+    <!-- 4. 业务逻辑（外部独立文件） -->
+    <script src="post.js"></script>
 </body>
 </html>
