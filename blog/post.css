@@ -32,3 +32,31 @@
     font-size: 0.9em;
     color: #d14;
 }
+
+/* ---------- 文章正文放大 ---------- */
+.markdown-body {
+    font-size: 1.5em;   /* 相对于父级字体放大 1.5 倍 */
+}
+
+/* ---------- 表格边框（分界线） ---------- */
+.markdown-body table {
+    border-collapse: collapse;      /* 合并相邻边框 */
+    width: 100%;
+    margin: 1em 0;
+}
+
+.markdown-body th,
+.markdown-body td {
+    border: 1px solid #b0c4d8;      /* 浅蓝灰边框，与你的冷色调搭配 */
+    padding: 8px 12px;
+    text-align: left;
+}
+
+.markdown-body th {
+    background: rgba(0, 136, 255, 0.08);  /* 极淡蓝色背景，区分表头 */
+    font-weight: 600;
+}
+
+.markdown-body tr:nth-child(even) {
+    background: rgba(0, 0, 0, 0.02);      /* 极淡的斑马纹，便于阅读 */
+}
