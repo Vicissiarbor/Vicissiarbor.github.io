@@ -123,3 +123,31 @@ a {
     text-decoration: none;
     font: inherit;
 }
+
+/* ===== 移动端适配（不影响桌面端） ===== */
+@media screen and (max-width: 600px) {
+
+    /* 整体字体缩小 */
+    body {
+        font-size: 14px;   /* 桌面端通常是 16px，移动端缩小 */
+    }
+
+    #header_logo img {
+        height: 1em;     
+    }
+
+    /* 卡片字体适当缩小 */
+    .card {
+        font-size: 1.2em;  /* 桌面端是 1.8em，移动端调小 */
+    }
+
+    /* 导航栏字体缩小，防止换行 */
+    header {
+        font-size: 1.2em;  /* 桌面端是 2em */
+    }
+
+    /* 部分区域边距微调 */
+    section {
+        margin-top: 100px;  /* 避免头部遮挡内容 */
+    }
+}
