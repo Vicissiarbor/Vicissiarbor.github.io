@@ -5,6 +5,14 @@
 // ============================================================
 const posts = [
     {
+        id:'makeweb',
+        title: '介绍我的网站是如何搭建的',
+        date: '2026-06-21',
+        author: '交讓',
+        tags: ["前端"],
+        category: '工程',
+    },
+    {
         id:'toInSCSE',
         title:'2026年计算机转专业题目',
         date: '2026-04-09',
@@ -20,7 +28,6 @@ const posts = [
         author: '交讓',
         tags: ["数学", "微积分","微分方程"],
         category: '数学',
-        summary: '期末周发疯作品，首发于河畔',
     },
     {
         id: 'relook_of_senior_high',
