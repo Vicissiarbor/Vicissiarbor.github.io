@@ -6,7 +6,7 @@
 
 ## 1. 本地图片测试
 
-**本地图片**（存放在 `static/images/` 目录）：
+**本地图片**（存放在 `images/logo/` 目录）：
 
 ![本地测试图片](../../images/logo/leaves.png)
 
