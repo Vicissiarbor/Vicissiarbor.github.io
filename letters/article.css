@@ -25,6 +25,7 @@
 }
 
 /* ===== 个人作品（works）专用 ===== */
+
 /* 序 – 楷体 */
 .preface-text {
     font-family: "华文楷体", "KaiTi", "STKaiti", "楷体", serif !important;
@@ -48,7 +49,6 @@
 #content h2.body-heading {
     display: none;   /* 隐藏 "序" 和 "正文" 标题，但不影响段落分类 */
 }
-
 
 /* ===== 推荐阅读（notes）专用 ===== */
 /* 区块标题样式 */
@@ -85,13 +85,13 @@
 /* ===== 文学评论 & 人物生平（critique / biography） ===== */
 /* blockquote 样式在 JS 中已内联，这里补充额外美化 */
 #content blockquote {
-    font-style: italic;
     color: #4a3a2a;
+    font-family: "上图东观", "Source Han Serif", serif;
 }
-#content blockquote p {
-    text-indent: 0 !important; /* 引用块内不缩进 */
+.critique-text{
+    font-family: "Source Han Serif", serif;
+    font-size: 1.3em;
 }
-
 /* 正文段落缩进已在 JS 中设置 */
 
 /* ===== 通用调整 ===== */

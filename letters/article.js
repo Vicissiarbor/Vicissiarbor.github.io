@@ -145,6 +145,7 @@
         paragraphs.forEach(p => {
             p.style.textIndent = '2em';
             p.style.margin = '0.5em 0';
+            p.classList.add('critique-text'); 
         });
 
         // 美化 blockquote（引用原文）
@@ -155,8 +156,6 @@
             bq.style.padding = '0.5em 1em';
             bq.style.margin = '1em 0';
             bq.style.borderRadius = '0 6px 6px 0';
-            // 引用块内的段落取消缩进（通常不需要）
-            bq.querySelectorAll('p').forEach(p => p.style.textIndent = '0');
         });
     }
 
