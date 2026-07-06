@@ -112,7 +112,6 @@
         const paragraphs = container.querySelectorAll('p');
         paragraphs.forEach(p => {
             p.style.textIndent = '2em';
-            p.style.margin = '0.5em 0';
         });
 
         // 根据三级标题划分区块
@@ -121,8 +120,7 @@
             const text = h3.textContent.trim();
             let className = '';
             if (text === '原文') className = 'note-original';
-            else if (text === '注释') className = 'note-comment';
-            else if (text === '感悟') className = 'note-reflection';
+            else if (text === '笔记') className = 'note-reflection';
             else return;
 
             h3.classList.add(className + '-heading');
@@ -134,9 +132,6 @@
                 next = next.nextElementSibling;
             }
         });
-
-        // 为不同区块添加背景或边框（仅视觉区分）
-        // 这里在 CSS 中处理，例如 .note-original { background: ... }
     }
 
     // 文学评论 & 人物生平：横排，缩进两格，美化引用块

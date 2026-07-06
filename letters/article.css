@@ -50,19 +50,18 @@
 }
 
 
-/* ===== 阅读笔记（notes）专用 ===== */
+/* ===== 推荐阅读（notes）专用 ===== */
 /* 区块标题样式 */
 #content h3 {
     margin: 1.5em 0 0.5em 0;
     font-weight: bold;
     border-left: 4px solid #b8956a;
     padding-left: 0.5em;
+    font-size: 2em;
 }
 .note-original-heading {
     color: #2c3e50;
-}
-.note-comment-heading {
-    color: #6a4e3a;
+    
 }
 .note-reflection-heading {
     color: #8b5a2b;
@@ -70,22 +69,18 @@
 
 /* 不同区块的背景微差（可选） */
 .note-original {
-    background: rgba(245, 235, 220, 0.3);
     padding: 0.2em 0.5em;
     border-radius: 4px;
-}
-.note-comment {
-    background: rgba(230, 215, 195, 0.2);
-    padding: 0.2em 0.5em;
-    border-radius: 4px;
+    font-size: 1.4em;
+    font-family: "上图东观", "Source Han Serif", serif;
 }
 .note-reflection {
-    background: rgba(215, 195, 170, 0.2);
     padding: 0.2em 0.5em;
     border-radius: 4px;
+    color: cornflowerblue;
+    font-family: "Source Han Serif", serif;
+    font-size: 1.2em;
 }
-
-/* 阅读笔记的段落缩进已在 JS 中设置，这里不做覆盖 */
 
 /* ===== 文学评论 & 人物生平（critique / biography） ===== */
 /* blockquote 样式在 JS 中已内联，这里补充额外美化 */

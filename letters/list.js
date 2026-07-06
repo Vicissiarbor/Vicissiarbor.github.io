@@ -6,12 +6,12 @@
 /*notes推荐阅读；works个人作品；critique文学评论；biography人物生平*/
 const articles = [
     {
-        id: 'fu_of_u18',
-        title: '成人赋',
-        type: 'works',
-        date: '2025-04-13',
-        dynasty: '现代',
-        author: '交讓'
+        id: 'dmlplpwf',
+        title: '典论·论文',
+        type: 'notes',
+        date: '2025-07-06',
+        dynasty: '魏',
+        author: '曹丕'
     },
     {
         id: 'fu_of_u18',
