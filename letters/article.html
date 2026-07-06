@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>交讓所生 · 文章</title>
+    <link rel="icon" type="image/png" href="../images/logo/tree_only_small.png">
+    <!-- 基础样式（与书架风格统一） -->
+    <link rel="stylesheet" href="shelf.css">
+    <!-- 文章覆盖样式 -->
+    <link rel="stylesheet" href="article.css">
+    <!-- 使用 CDN 加载 marked -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <!-- 简单头部，与书架风格匹配（可自定） -->
+    <header style="padding: 20px 30px; background: #f1e2d0; border-bottom: 4px solid #7a5a3a; font-family: '华文隶书','STLiti','LiSu','隶书',serif; font-size: 1.5em;">
+        <a href="shelf.html" style="color: #5a3f22; text-decoration: none;">📚 返回书架</a>
+    </header>
+
+    <!-- 文章内容容器 -->
+    <section style="max-width: 1000px; margin: 20px auto; background: #faf6ef; border: 8px solid #7a5a3a; box-shadow: inset 0 0 0 4px #b8956a; min-height: 600px;">
+        <div id="content" style="padding: 10px;">
+            ⏳ 加载文章中...
+        </div>
+    </section>
+
+    <!-- 引入列表数据 -->
+    <script src="list.js"></script>
+    <!-- 引入渲染逻辑 -->
+    <script src="article.js"></script>
+</body>
+</html>

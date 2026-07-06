@@ -1,0 +1,102 @@
+/* article.css - 仅覆盖和补充 shelf.css 中文章页需要的样式 */
+
+/* ===== 文章元信息 ===== */
+.article-meta {
+    text-align: center;
+    margin-bottom: 2em;
+    padding-bottom: 1em;
+    border-bottom: 2px dashed #b8956a;
+    font-family: "华文隶书", "STLiti", "LiSu", "隶书", serif;
+}
+.meta-title {
+    font-size: 2em;
+    display: block;
+    font-weight: bold;
+    color: #3a2618;
+}
+.meta-info {
+    font-size: 0.8em;
+    color: #7a5a3a;
+}
+
+/* ===== 个人作品（works）专用 ===== */
+/* 序 – 楷体 */
+.preface-text {
+    font-family: "华文楷体", "KaiTi", "STKaiti", "楷体", serif !important;
+    font-size: 0.95em; /* 略小一点以示区分 */
+    color: #3a2a1a;
+}
+/* 正文 – 继承隶书（由 JS 设置的字体） */
+.body-text {
+    font-family: inherit;
+}
+
+/* 竖排标题保持居中 */
+#content h2 {
+    text-align: center;
+    margin: 1.5em 0 0.5em 0;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+#content h2.preface-heading {
+    color: #7a5a3a;
+}
+#content h2.body-heading {
+    color: #3a2618;
+}
+
+/* ===== 阅读笔记（notes）专用 ===== */
+/* 区块标题样式 */
+#content h3 {
+    margin: 1.5em 0 0.5em 0;
+    font-weight: bold;
+    border-left: 4px solid #b8956a;
+    padding-left: 0.5em;
+}
+.note-original-heading {
+    color: #2c3e50;
+}
+.note-comment-heading {
+    color: #6a4e3a;
+}
+.note-reflection-heading {
+    color: #8b5a2b;
+}
+
+/* 不同区块的背景微差（可选） */
+.note-original {
+    background: rgba(245, 235, 220, 0.3);
+    padding: 0.2em 0.5em;
+    border-radius: 4px;
+}
+.note-comment {
+    background: rgba(230, 215, 195, 0.2);
+    padding: 0.2em 0.5em;
+    border-radius: 4px;
+}
+.note-reflection {
+    background: rgba(215, 195, 170, 0.2);
+    padding: 0.2em 0.5em;
+    border-radius: 4px;
+}
+
+/* 阅读笔记的段落缩进已在 JS 中设置，这里不做覆盖 */
+
+/* ===== 文学评论 & 人物生平（critique / biography） ===== */
+/* blockquote 样式在 JS 中已内联，这里补充额外美化 */
+#content blockquote {
+    font-style: italic;
+    color: #4a3a2a;
+}
+#content blockquote p {
+    text-indent: 0 !important; /* 引用块内不缩进 */
+}
+
+/* 正文段落缩进已在 JS 中设置 */
+
+/* ===== 通用调整 ===== */
+/* 确保竖排时图片、表格等不会乱 */
+#content img, #content table {
+    max-width: 100%;
+}
+/* 表格在竖排下可能需要横向滚动，但很少出现 */

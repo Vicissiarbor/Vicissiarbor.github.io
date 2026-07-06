@@ -75,6 +75,10 @@ body{
                     transparent 6%, transparent 94%, 
                     rgba(0,0,0,0.25) 94%, rgba(0,0,0,0.25) 100%),
     #eee7df;
+    height: 180px;          /* 固定高度 */
+    overflow: hidden;       /* 防止溢出 */
+    word-break: break-all;  /* 允许在任意字符处换行（竖排下就是换列） */
+    line-height: 1.2;       /* 调整行距，控制每列高度 */
 }
 
 .third {
@@ -134,27 +138,28 @@ body{
     flex-direction: column;     /* 在 vertical-rl 下 = 从左到右排列（日期在左，内容在右） */
     align-items: center;
     justify-content: center;
-    height: 180px;
-    width: 72px;
+    height: 240px;
+    width: auto;
     margin: 10px 6px;
     padding: 4px 2px;           /* 稍收窄内边距，适应两列 */
     flex-shrink: 0;
+    word-break: normal;
     /* box-shadow 和 background 完全继承自通用 .book，无需重写 */
 }
-/* 内容与日期：竖排、居中 */
+/* 内容与日期：竖排、居中，允许语义换行 */
 #archive .book-content,
 #archive .book-date {
     writing-mode: vertical-rl;
     text-orientation: upright;
     font-family: "华文隶书", "STLiti", "LiSu", "隶书", serif;
-    white-space: nowrap;
+    white-space: normal;        /* 关键：允许换行，不再强制单列 */
+    word-break: keep-all;       /* 关键：中文/数字词组不被拆散，只在词间换行 */
     display: flex;
     align-items: center;
     justify-content: center;
-    flex: 1 1 auto;
+    flex: 0 0 auto;             /* 改为自动尺寸，不再拉伸占满空间 */
     padding: 0 2px;
     color: #2d1b0e;
-    min-height: 30%;
 }
 /* 日期：在左侧，字号稍小、半透明，右侧加分隔线 */
 #archive .book-date {
