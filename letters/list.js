@@ -3,14 +3,13 @@
 
 // 1. 文章数据（手动维护，按需增删）
 // ------------------------------------------------------------
-/*notes阅读笔记；works个人作品；critique文学评论；biography人物生平*/
+/*notes推荐阅读；works个人作品；critique文学评论；biography人物生平*/
 const articles = [
-    // ===== 第二层：推荐阅读（阅读笔记） =====
     {
-        id: 'note_dianlun',
-        title: '读《典论·论文》札记',
-        type: 'notes',
-        date: '2026-07-01',
+        id: 'fu_of_u18',
+        title: '成人赋',
+        type: 'works',
+        date: '2025-04-13',
         dynasty: '现代',
         author: '交讓'
     },
@@ -18,74 +17,10 @@ const articles = [
         id: 'fu_of_u18',
         title: '成人赋',
         type: 'works',
-        date: '2026-07-01',
+        date: '2025-04-13',
         dynasty: '现代',
         author: '交讓'
     },
-    {
-        id: 'note_wenfu',
-        title: '《文赋》阅读笔记',
-        type: 'notes',
-        date: '2026-06-28',
-        dynasty: '现代',
-        author: '交讓'
-    },
-
-    // ===== 第三层左：个人作品 =====
-    {
-        id: 'dianlun',
-        title: '典论·论文',
-        type: 'works',
-        date: '220年',        // 使用中文年份
-        dynasty: '曹魏',
-        author: '曹丕'
-    },
-    {
-        id: 'dengloufu',
-        title: '登楼赋',
-        type: 'works',
-        date: '192年',
-        dynasty: '东汉',
-        author: '王粲'
-    },
-
-    // ===== 第三层右：文学评论 =====
-    {
-        id: 'critique_caopi',
-        title: '曹丕文学观论略',
-        type: 'critique',
-        date: '2026-07-02',
-        dynasty: '现代',
-        author: '交讓'
-    },
-    {
-        id: 'critique_wenfu',
-        title: '《文赋》批评史钩沉',
-        type: 'critique',
-        date: '2026-06-30',
-        dynasty: '现代',
-        author: '交讓'
-    },
-
-    // ===== 第四层：人物生平 =====
-    {
-        id: 'caopi_bio',
-        title: '曹丕年谱',
-        type: 'biography',
-        date: '2026-07-03',
-        dynasty: '曹魏',
-        author: '交讓'
-    },
-    {
-        id: 'wangcan_bio',
-        title: '王粲传略',
-        type: 'biography',
-        date: '2026-07-04',
-        dynasty: '东汉',
-        author: '交讓'
-    },
-
-    // 注意：归档不再需要单独定义，程序会自动从上面所有文章中提取
 ];
 
 // ============================================================
