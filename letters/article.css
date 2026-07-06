@@ -1,12 +1,17 @@
 /* article.css - 仅覆盖和补充 shelf.css 中文章页需要的样式 */
-
+@font-face {
+    font-family: '上图东观';
+    src: url('../fonts/上图东观体-常规.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 /* ===== 文章元信息 ===== */
 .article-meta {
     text-align: center;
     margin-bottom: 2em;
     padding-bottom: 1em;
     border-bottom: 2px dashed #b8956a;
-    font-family: "华文隶书", "STLiti", "LiSu", "隶书", serif;
+    font-family: "上图东观", "Source Han Serif", serif;
 }
 .meta-title {
     font-size: 2em;
@@ -24,26 +29,26 @@
 .preface-text {
     font-family: "华文楷体", "KaiTi", "STKaiti", "楷体", serif !important;
     font-size: 0.95em; /* 略小一点以示区分 */
+    font-weight:bolder;
     color: #3a2a1a;
 }
 /* 正文 – 继承隶书（由 JS 设置的字体） */
 .body-text {
-    font-family: inherit;
+    font-family: "上图东观", "Source Han Serif", serif;
 }
 
 /* 竖排标题保持居中 */
 #content h2 {
-    text-align: center;
+    text-align: left;
     margin: 1.5em 0 0.5em 0;
     font-weight: bold;
     letter-spacing: 4px;
 }
-#content h2.preface-heading {
-    color: #7a5a3a;
-}
+#content h2.preface-heading,
 #content h2.body-heading {
-    color: #3a2618;
+    display: none;   /* 隐藏 "序" 和 "正文" 标题，但不影响段落分类 */
 }
+
 
 /* ===== 阅读笔记（notes）专用 ===== */
 /* 区块标题样式 */

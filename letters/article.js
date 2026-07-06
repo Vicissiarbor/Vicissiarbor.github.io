@@ -47,7 +47,7 @@
             metaDiv.className = 'article-meta';
             metaDiv.innerHTML = `
                 <span class="meta-title">${articleMeta.title}</span>
-                <span class="meta-info">${articleMeta.dynasty || ''} · ${articleMeta.author || ''}</span>
+                <span class="meta-info">${articleMeta.author || ''}</span>
             `;
             contentEl.prepend(metaDiv);
         })
@@ -62,7 +62,6 @@
         // 整体竖排
         container.style.writingMode = 'vertical-rl';
         container.style.textOrientation = 'upright';
-        container.style.fontFamily = '"华文隶书", "STLiti", "LiSu", "隶书", serif';
         container.style.fontSize = '1.8em';
         container.style.lineHeight = '1.8';
         container.style.padding = '20px 40px';
@@ -73,7 +72,6 @@
         const headings = container.querySelectorAll('h2');
         headings.forEach(h2 => {
             if (h2.textContent.trim() === '序') {
-                // 给 h2 本身加类（可选）
                 h2.classList.add('preface-heading');
                 // 给后续兄弟元素（直到下一个 h2）加类
                 let next = h2.nextElementSibling;
