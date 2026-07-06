@@ -50,6 +50,16 @@
                 <span class="meta-info">${articleMeta.author || ''}</span>
             `;
             contentEl.prepend(metaDiv);
+            requestAnimationFrame(() => {
+                // 确保容器宽度由内容撑开（防止父级限制）
+                contentEl.style.display = 'inline-block';
+                contentEl.style.width = 'auto';
+                contentEl.style.maxWidth = 'none';
+                // 等待布局完成后滚动
+                requestAnimationFrame(() => {
+                    metaDiv.scrollIntoView({ block: 'start', inline: 'end', behavior: 'auto' });
+                });
+            });
         })
         .catch(err => {
             contentEl.innerHTML = `<p style="color:#c0392b;">❌ 加载失败：${err.message}</p>`;
@@ -92,12 +102,14 @@
                     next = next.nextElementSibling;
                 }
             }
+            
         });
-
         // 如果没有任何 h2，则全部视为正文
         if (container.querySelectorAll('h2').length === 0) {
             container.querySelectorAll('p').forEach(p => p.classList.add('body-text'));
         }
+        
+
     }
 
     // 阅读笔记：横排，区分原文/注释/感悟
