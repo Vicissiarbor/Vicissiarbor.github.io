@@ -30,9 +30,10 @@ body{
     padding: 0;
     margin: 0 20px 0 20px;
     border: 8px solid #7a5a3a;
-    box-shadow: inset 0 0 0 4px #b8956a;
+    box-shadow: inset 0 0 0 8px #b8956a;
     font-size: 2em;
     text-align: center;
+    background-color: #f1e2d0;
 }
 .board{
     font-family: "华文隶书", "STLiti", "LiSu", "隶书", serif;
@@ -41,6 +42,22 @@ body{
     font-size: 1.5em;
     background-color: #b8956a;
     margin-left: 10px;
+    min-height: 200px; 
+}
+.shelf-scroll{
+    writing-mode: vertical-rl; 
+    text-orientation: upright;
+    overflow-x: auto;
+}
+.shelf-scroll::-webkit-scrollbar {
+    height: 8px;
+}
+.shelf-scroll::-webkit-scrollbar-thumb {
+    background: #7a5a3a;
+    border-radius: 4px;
+}
+.shelf-scroll::-webkit-scrollbar-track {
+    background: #b8956a;
 }
 .book{
     font-family: "华文隶书", "STLiti", "LiSu", "隶书", serif;
