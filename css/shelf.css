@@ -24,11 +24,12 @@ body{
     unicode-bidi: bidi-override;
     
 }
-.second{
+.second,
+.forth{
     display: flex; 
     flex-direction: row-reverse;
     padding: 0;
-    margin: 0 20px 0 20px;
+    margin: -6px 20px 0 20px;
     border: 8px solid #7a5a3a;
     box-shadow: inset 0 0 0 8px #b8956a;
     font-size: 2em;
@@ -74,4 +75,91 @@ body{
                     transparent 6%, transparent 94%, 
                     rgba(0,0,0,0.25) 94%, rgba(0,0,0,0.25) 100%),
     #eee7df;
+}
+
+.third {
+    display: flex;
+    margin: -6px 20px 0 20px;
+    min-height: 200px;
+    font-size: 2em;
+}
+.third-section {
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: #f1e2d0;
+    border: 8px solid #7a5a3a;
+    box-shadow: inset 0 0 0 4px #b8956a;
+    flex: 1;
+    overflow: hidden;
+}
+.section-left {
+    flex: 4;
+}
+.section-right {
+    flex: 6;
+}
+
+/* ===== 第五层 #archive：双列书脊（仅覆盖差异） ===== */
+#archive {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0;
+    margin: -6px 20px 0 20px;
+    border: 8px solid #7a5a3a;
+    box-shadow: inset 0 0 0 8px #b8956a;
+    font-size: 2em;
+    text-align: center;
+    background-color: #f1e2d0;
+    min-height: 200px;
+}
+#archive .board {
+    flex: 0 0 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;          /* 保留与通用 .board 一致的间距 */
+    min-height: 200px;          /* 保持高度一致 */
+}
+/* shelf-scroll：让书脊横向流动（其余继承自 .shelf-scroll） */
+#archive .shelf-scroll {
+    display: flex;
+    flex-direction: column;     /* 在 vertical-rl 下让书水平并排排列 */
+    overflow-y: hidden;
+    flex: 1;
+    padding: 0 6px;
+}
+/* book：改为横向并排（内容与日期左右分布） */
+#archive .book {
+    display: flex;
+    flex-direction: column;     /* 在 vertical-rl 下 = 从左到右排列（日期在左，内容在右） */
+    align-items: center;
+    justify-content: center;
+    height: 180px;
+    width: 72px;
+    margin: 10px 6px;
+    padding: 4px 2px;           /* 稍收窄内边距，适应两列 */
+    flex-shrink: 0;
+    /* box-shadow 和 background 完全继承自通用 .book，无需重写 */
+}
+/* 内容与日期：竖排、居中 */
+#archive .book-content,
+#archive .book-date {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-family: "华文隶书", "STLiti", "LiSu", "隶书", serif;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 auto;
+    padding: 0 2px;
+    color: #2d1b0e;
+    min-height: 30%;
+}
+/* 日期：在左侧，字号稍小、半透明，右侧加分隔线 */
+#archive .book-date {
+    font-size: 0.55em;
+    opacity: 0.6;
+    border-right: 1px solid rgba(0,0,0,0.1);   /* 分隔线在右侧（内容一侧） */
+    padding-right: 4px;
 }
