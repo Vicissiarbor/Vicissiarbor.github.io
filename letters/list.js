@@ -128,7 +128,7 @@ function renderShelf() {
     const allOthers = articles.filter(a => a.type !== 'archive');
     // 按日期排序（旧 -> 新）
     const sorted = [...allOthers].sort((a, b) => {
-        return parseYear(a.date) - parseYear(b.date);
+        return parseYear(b.date) - parseYear(a.date);
     });
 
     let archiveContainer = document.querySelector('#archive .shelf-scroll');
