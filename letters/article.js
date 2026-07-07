@@ -125,9 +125,19 @@
         // 给段落设置缩进两格（2em）
         const paragraphs = container.querySelectorAll('p');
         paragraphs.forEach(p => {
-            p.style.textIndent = '2em';
+            if (!p.closest('blockquote')) {
+                p.style.textIndent = '2em';
+            }
         });
-
+        const bqs = container.querySelectorAll('blockquote');
+        bqs.forEach(bq => {
+            bq.style.borderLeft = '4px solid #7a5a3a';
+            bq.style.backgroundColor = '#f5ede4';
+            bq.style.padding = '0.5em 1em';
+            bq.style.margin = '1em 0';
+            bq.style.borderRadius = '0 6px 6px 0';
+            bq.style.textIndent = '0';
+        });
         // 根据三级标题划分区块
         const h3s = container.querySelectorAll('h3');
         h3s.forEach(h3 => {
