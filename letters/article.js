@@ -53,11 +53,10 @@
             `;
             contentEl.prepend(metaDiv);
             requestAnimationFrame(() => {
-                // 确保容器宽度由内容撑开（防止父级限制）
-                contentEl.style.display = 'inline-block';
-                contentEl.style.width = 'auto';
-                contentEl.style.maxWidth = 'none';
-                // 等待布局完成后滚动
+                // 让容器占满父级宽度，但保留滚动定位
+                contentEl.style.display = 'block'; // 或者干脆不设置，因为块级是默认
+                contentEl.style.width = '100%';
+                contentEl.style.maxWidth = '100%';
                 requestAnimationFrame(() => {
                     metaDiv.scrollIntoView({ block: 'start', inline: 'end', behavior: 'auto' });
                 });
