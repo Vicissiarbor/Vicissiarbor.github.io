@@ -63,7 +63,7 @@ function renderShelf() {
             book.textContent = item.title;
             book.style.cursor = 'pointer';
             book.addEventListener('click', () => {
-                window.location.href = `article.html?page=${item.id}`;
+                window.open(`article.html?page=${item.id}`, '_blank');
             });
             container.appendChild(book);
         });
@@ -85,7 +85,7 @@ function renderShelf() {
             book.appendChild(dateSpan);
             book.addEventListener('click', () => {
                 if (item.id) {
-                    window.location.href = `article.html?page=${item.id}`;
+                    window.open(`article.html?page=${item.id}`, '_blank');
                 }
             });
             container.appendChild(book);
