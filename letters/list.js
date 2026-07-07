@@ -6,6 +6,14 @@
 /*notes推荐阅读；works个人作品；critique文学评论；biography人物生平*/
 const articles = [
     {
+        id: 'dmlpzixu',
+        title: '典论·自叙',
+        type: 'notes',
+        date: '2026-07-07',
+        dynasty: '魏',
+        author: '曹丕'
+    },
+    {
         id: 'dmlplpwf',
         title: '典论·论文',
         type: 'notes',
