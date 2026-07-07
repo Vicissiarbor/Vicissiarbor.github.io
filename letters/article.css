@@ -101,3 +101,11 @@
     max-width: 100%;
 }
 /* 表格在竖排下可能需要横向滚动，但很少出现 */
+
+/* 专有名词 – 人名、地名等 */
+.proper-noun {
+    text-decoration: underline;
+    text-underline-offset: 0.2em;      /* 下划线离文字稍远一点，更美观 */
+    text-decoration-thickness: 2px;    /* 加粗下划线 */
+    text-decoration-color: #b8956a;    /* 配合你的主题色 */
+}

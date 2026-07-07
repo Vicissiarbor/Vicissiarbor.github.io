@@ -29,7 +29,9 @@
         })
         .then(markdown => {
             // 1. 使用 marked 解析
-            let html = marked.parse(markdown);
+            // 预处理：将 >>专有名词<< 转换为 <u class="proper-noun">专有名词</u>
+            const processedMarkdown = markdown.replace(/>>([^<<]+)<</g, '<u class="proper-noun">$1</u>');
+            let html = marked.parse(processedMarkdown);
             contentEl.innerHTML = html;
 
             // 2. 根据类型进行后处理
