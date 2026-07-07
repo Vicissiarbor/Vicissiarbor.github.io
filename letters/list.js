@@ -9,7 +9,7 @@ const articles = [
         id: 'dmlplpwf',
         title: '典论·论文',
         type: 'notes',
-        date: '2025-07-06',
+        date: '2026-07-06',
         dynasty: '魏',
         author: '曹丕'
     },
