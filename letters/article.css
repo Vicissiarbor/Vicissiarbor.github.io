@@ -77,9 +77,10 @@
 .note-reflection {
     padding: 0.2em 0.5em;
     border-radius: 4px;
-    color: cornflowerblue;
+    color: rgb(65, 116, 212);
     font-family: "Source Han Serif", serif;
     font-size: 1.2em;
+    font-weight: bold;
 }
 
 /* ===== 文学评论 & 人物生平（critique / biography） ===== */
