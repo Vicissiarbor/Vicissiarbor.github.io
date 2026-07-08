@@ -54,9 +54,7 @@
             contentEl.prepend(metaDiv);
             requestAnimationFrame(() => {
                 // 让容器占满父级宽度，但保留滚动定位
-                contentEl.style.display = 'block'; // 或者干脆不设置，因为块级是默认
-                contentEl.style.width = '100%';
-                contentEl.style.maxWidth = '100%';
+                contentEl.style.display = 'block';
                 requestAnimationFrame(() => {
                     metaDiv.scrollIntoView({ block: 'start', inline: 'end', behavior: 'auto' });
                 });
