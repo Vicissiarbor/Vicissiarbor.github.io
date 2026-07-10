@@ -38,15 +38,6 @@ const posts = [
         category: '数学',
     },
     {
-        id: 'relook_of_senior_high',
-        title: '高中回忆录',
-        date: '2025-12-01',
-        author: '交讓',
-        tags: ['随笔'],
-        category: '文辞',
-        summary: '我终于有空，也有精力，也有动力，也有内容，来写下这篇文章了',
-    },
-    {
         id: 'first-post',           // 对应 post.html?page=first-post
         title: '功能综合测试',
         date: '2025-11-30',
