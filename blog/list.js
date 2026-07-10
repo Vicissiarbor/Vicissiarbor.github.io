@@ -5,6 +5,14 @@
 // ============================================================
 const posts = [
     {
+        id:'closure',
+        title: '闭包',
+        date: '2026-07-10',
+        author: '交讓',
+        tags: ["闭包","JavaScript","Go"],
+        category: '编程',
+    },
+    {
         id:'makeweb',
         title: '介绍我的网站是如何搭建的',
         date: '2026-06-21',
